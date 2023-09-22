@@ -1,0 +1,93 @@
+/*************** C S S  V A R I A B L E S ****************/
+
+:root{
+    --main-font:'Nunito Sans', sans-serif;
+    --h2-h3-font: 'Source Sans 3', sans-serif;
+    --h1-font: 'Source Sans 3', sans-serif;
+    --h1-font-color: rgba(71, 69, 84, 1);
+    --h2-font-color: rgba(172, 167, 203, 1);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+
+
+/*********** G O O G L E  F O N T *************/
+
+/* Nunito sans for the main text*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+
+/* Source Sans 3 for h2 and h3(not Source Sans Pro on fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
+
+/* Fria sans for h1*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
+
+
+/**************** A L L  &  B O D Y ************************/
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: var(--main-font);
+    text-decoration: none;
+}
+
+/******************** H E A D E R ************************/
+header h2, h3{
+    font-family: var(--h2-h3-font);
+}
+
+.homeScroll{
+    text-align: center;
+}
+
+/**************** N A V  B A R R E **************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.burger{
+    cursor: pointer;
+    display: none;
+    display: block;
+}
+
+.burger:before{
+    content: "\2630"
+}
+
+nav h2{
+    color: var(--h2-font-color);
+}
+
+/* ******************* M A I N ******************************* */
+
+/* ********* H GROUP ****************/
+hgroup{
+    text-align: center;
+    padding: 50px;
+}
+
+hgroup h1{
+    color: var(--h1-font-color);
+    padding: 10px;
+}
+
+hgroup h2{
+    color: var(--h2-font-color);
+
+}
+
+/* ********** HOME CARD ************/
+.homeGrid{
+    display: grid;
+    grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(6, 100px);
+    grid-gap: 8px;
+}
