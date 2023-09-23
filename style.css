@@ -6,6 +6,8 @@
     --h1-font: 'Source Sans 3', sans-serif;
     --h1-font-color: rgba(71, 69, 84, 1);
     --h2-font-color: rgba(172, 167, 203, 1);
+    --clear-background-color: rgba(172, 167, 203, 1);
+    --dark-background-color: rgba(71, 69, 84, 1);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
@@ -33,6 +35,26 @@
     scroll-behavior: smooth;
     font-family: var(--main-font);
     text-decoration: none;
+}
+
+/***********HOME SCROLL ************* */
+.homeScroll{
+    background-image: url(./assets/background.png);
+    height: 100vh;
+    text-align: center;
+}
+
+.homeScroll hgroup{
+padding-top: 35%;
+}
+
+.homeScroll h2{
+        font-size: 5rem;
+        color: var(--h2-font-color);
+}
+
+.homeScroll h3{
+    font-size: large;
 }
 
 /******************** H E A D E R ************************/
@@ -69,25 +91,68 @@ nav h2{
 /* ******************* M A I N ******************************* */
 
 /* ********* H GROUP ****************/
-hgroup{
+main hgroup{
     text-align: center;
-    padding: 50px;
+    padding: 16px;
 }
 
-hgroup h1{
+main hgroup h1{
     color: var(--h1-font-color);
     padding: 10px;
 }
 
-hgroup h2{
-    color: var(--h2-font-color);
-
+main hgroup p{
+    color: var(--h2-font-color)
 }
+
+main hgroup h2{
+    color: var(--h2-font-color);
+}
+
+
 
 /* ********** HOME CARD ************/
 .homeGrid{
     display: grid;
-    grid-template-columns: repeat(2, 100px);
-    grid-template-rows: repeat(6, 100px);
-    grid-gap: 8px;
+    grid-template-columns: repeat(2, 2fr);
+    grid-template-rows: repeat(6, 120px);
+    grid-gap: 24px;
+    margin: 10px;
+    padding: 16px;
 }
+
+.masterHomeCard, .studentHomeCard{
+    background-color: var(--dark-background-color);
+    border-radius: 24px;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: small;
+}
+
+.masterHomeCard:first-child{
+    color: var(--h2-font-color);
+ }
+
+.masterHomeCard:nth-of-type(2){
+    background-color: var(--clear-background-color);
+    color: var(--h1-font-color);
+ }
+
+ .studentHomeCard:nth-of-type(2n+3){
+    background-color: var(--dark-background-color);
+ }
+
+/* *********** F O O T E R ***************************************/
+footer {
+    background-image: url(./assets/background.png);
+    background-color: var(--clear-background-color);
+    height: 100vh;
+}
+
+footer hgroup{
+    margin: 24px;
+    padding-top: 40px;
+    text-align: justify;
+}
+
+
