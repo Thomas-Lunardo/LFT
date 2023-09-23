@@ -1,0 +1,22 @@
+:root {
+    --h2h3-font: "Source Sans 3", "sans-serif";
+    --h2-color: #ACA7CB;
+    --h3-color: #FFFFFF;
+    --paragraph-font: "Nunito Sans", "sans-serif"
+}
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;  
+}
+
+/*********** FONT NUNITO SANS ET SOURCE SANS 3 ******************/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
+
+/************* MENU ************/
+
+/*********** BODY **************/
