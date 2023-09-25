@@ -1,13 +1,31 @@
+/*************** C S S  V A R I A B L E S ****************/
+
 :root{
     --main-font:'Nunito Sans', sans-serif;
     --h2-h3-font: 'Source Sans 3', sans-serif;
-    --h1-font: 'Source Sans 3', sans-serif;
+    --h1-font: 'Fira Sans', sans-serif;
     --h1-font-color: rgba(71, 69, 84, 1);
     --h2-font-color: rgba(172, 167, 203, 1);
     --clear-background-color: rgba(172, 167, 203, 1);
     --dark-background-color: rgba(71, 69, 84, 1);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+
+
+
+/*********** G O O G L E  F O N T *************/
+
+/* Nunito sans for the main text*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+
+/* Source Sans 3 for h2 and h3(not Source Sans Pro on fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
+
+/* Fira sans for h1*/
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
+
+/**************** A L L  &  B O D Y ************************/
 *{
     box-sizing: border-box;
     margin: 0;
@@ -16,5 +34,70 @@
     scroll-behavior: smooth;
     font-family: var(--main-font);
     text-decoration: none;
+}
 
+/**************** N A V  B A R R E **************/
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.burger{
+    cursor: pointer;
+    display: none;
+    display: block;
+}
+
+.burger:before{
+    content: "\2630"
+}
+
+nav h2{
+    color: var(--h2-font-color);
+}
+/***************** MAIN *****************/
+main>div{
+    display:flex;
+    background-image: url('./images/mobile/amina_mobile.png');
+    padding-top:20px;
+    background-repeat: no-repeat;
+    height:640px;
+
+}
+
+.block{
+    background-image: url('./images/purple_gradient.png');
+    position: relative;
+    height:200px;
+    width: 100%;
+    top:65%;
+}
+
+.block>p:first-child{
+    font-family:var(--h2-h3-font);    
+    padding-top: 15%;
+    padding-left: 15%;
+}
+
+.block>p:nth-of-type(2){
+    font-family:var(--h2-h3-font);    
+    padding-left: 15%;
+    font-size:x-large;
+}
+
+.block>p:nth-of-type(3){
+    font-family:var(--h2-h3-font);
+    padding-top: 15%;    
+    text-align: center;
+}
+
+
+footer {
+    background-color: var(--clear-background-color);
+    background-image: url('./assets/background.png');
+    background-blend-mode:overlay;
+    opacity: 20%;
+    height: 100vh;
 }
