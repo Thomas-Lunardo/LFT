@@ -8,6 +8,7 @@
     --h2-font-color: rgba(172, 167, 203, 1);
     --clear-background-color: rgba(172, 167, 203, 1);
     --dark-background-color: rgba(71, 69, 84, 1);
+    --default-font-color: whitesmoke;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
@@ -58,46 +59,54 @@ nav h2{
     color: var(--h2-font-color);
 }
 /***************** MAIN *****************/
-main>div{
-    display:flex;
-    background-image: url('./images/mobile/amina_mobile.png');
-    padding-top:20px;
-    background-repeat: no-repeat;
-    height:640px;
-
-}
 
 .block{
-    background-image: url('./images/purple_gradient.png');
-    position: relative;
-    height:200px;
     width: 100%;
-    top:65%;
+    height: 640px;
 }
 
-.block>p:first-child{
-    font-family:var(--h2-h3-font);    
-    padding-top: 15%;
-    padding-left: 15%;
+.info{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top : 80%;
+    color:var(--default-font-color);
 }
 
-.block>p:nth-of-type(2){
-    font-family:var(--h2-h3-font);    
-    padding-left: 15%;
-    font-size:x-large;
+.info>h2{
+    font-family:var(--main-font);    
+    padding-left: 8%;
+    font-weight: lighter;
+    font-size: 16px;
 }
 
-.block>p:nth-of-type(3){
+.info>h1{
+    font-family:var(--h1-font);    
+    padding-left: 8%;
+    font-weight: bold;
+    font-size:36px;
+}
+
+.info>p{
     font-family:var(--h2-h3-font);
-    padding-top: 15%;    
+    padding-top: 8%;
     text-align: center;
 }
+.social-icons{
+    display: flex;
+    position: absolute;
+    width: 0px;
+    top: 540px;
+    left: 240px;
+    justify-content: space-between;
+}
+.social-icons img{
+    top:400px;
+    width:20px;
+}
 
+.secondblock img{
+    width: 100%;
 
-footer {
-    background-color: var(--clear-background-color);
-    background-image: url('./assets/background.png');
-    background-blend-mode:overlay;
-    opacity: 20%;
-    height: 100vh;
 }
