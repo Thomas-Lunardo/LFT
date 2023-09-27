@@ -160,19 +160,54 @@ main hgroup h2{
     font-size: small;
 }
 
+/**************** M A S T E R  H O M E  C A R D S  ************/
+
+/***** ALL HOME CARDS  *******/
+
+.masterHomeCard p:first-of-type .studentHomeCardClear p:first-of-type, .studentHomeCardDark p:first-of-type{
+    color: var(--font-color-p-first);
+ }
+
+a img{
+    width: 35px;
+    height: auto;
+    margin-top: 13%;
+    margin-left: 65%;
+ }
+
+/**** ALL MASTER HOME CARDS  ****/
+
+.masterHomeCard p:nth-child(2){
+    font-weight: bold;
+    color: var(--h2-font-color);
+}
+
+/**** FIRST MASTER HOME CARD  ****/
+
 .masterHomeCard:first-of-type{
     background-color: var(--dark-background-color);
     color: var(--h2-font-color);
 }
+
+/**** SECOND MASTER HOME CARD  ****/
 
 .masterHomeCard:nth-of-type(2){
     background-color: var(--clear-background-color);
     color: var(--h1-font-color);
  }
 
- .masterHomeCard p:first-of-type{
-    color: var(--font-color-p-first);
+ .masterHomeCard:nth-of-type(2) p:nth-of-type(2){
+    background-color: var(--clear-background-color);
+    color: var(--dark-background-color);
  }
+
+ /***** STUDENT HOME CARDS *******/
+
+ /**** ALL STUDENTS HOME CARDS  ****/
+
+
+
+  /**** CLEAR STUDENTS HOME CARDS  ****/
 
  .studentHomeCardClear{
     background-color: var(--clear-background-color);
@@ -182,6 +217,14 @@ main hgroup h2{
     font-size: small;
  }
 
+ .studentHomeCardClear p:nth-child(2){
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: var(--dark-background-color);
+ }
+
+   /**** DARK STUDENTS HOME CARDS  ****/
+
  .studentHomeCardDark{
     background-color: var(--dark-background-color);
     border-radius: 24px;
@@ -190,19 +233,14 @@ main hgroup h2{
     font-size: small;
  }
 
-.studentHomeCardClear p:first-of-type, .studentHomeCardDark p:first-of-type{
-    color: var(--font-color-p-first);
+ .studentHomeCardDark p:nth-child(2){
+    font-weight: bold;
+    margin-bottom: 3px;
+    color: var(--clear-background-color);
  }
 
- .homeGrid a{
-    color: antiquewhite;
- }
-
- a img{
-    width: 35px;
-    height: auto;
-    margin-top: 13%;
-    margin-left: 65%;
+ .studentHomeCardDark p:nth-child(3){
+    color: var(--clear-background-color);
  }
 
 /* *********** F O O T E R ***************************************/
