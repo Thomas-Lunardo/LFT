@@ -6,6 +6,7 @@
     --h1-font: 'Source Sans 3', sans-serif;
     --h1-font-color: rgba(71, 69, 84, 1);
     --h2-font-color: rgba(172, 167, 203, 1);
+    --font-color-p-first: whitesmoke;
     --clear-background-color: rgba(172, 167, 203, 1);
     --dark-background-color: rgba(71, 69, 84, 1);
     /* --background-image-mixed: url(./assets/background.png), rgba(172, 167, 203, 1); */
@@ -159,11 +160,8 @@ main hgroup h2{
     font-size: small;
 }
 
-.masterHomeCard{
+.masterHomeCard:first-of-type{
     background-color: var(--dark-background-color);
-}
-
-.masterHomeCard:first-child{
     color: var(--h2-font-color);
 }
 
@@ -172,13 +170,28 @@ main hgroup h2{
     color: var(--h1-font-color);
  }
 
- .studentHomeCard{
-    background-color: var(--clear-background-color);
+ .masterHomeCard p:first-of-type{
+    color: var(--font-color-p-first);
  }
 
- .studentHomeCard:nth-of-type(2n+4){
+ .studentHomeCardClear{
+    background-color: var(--clear-background-color);
+    border-radius: 24px;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: small;
+ }
+
+ .studentHomeCardDark{
     background-color: var(--dark-background-color);
-    color: var(--h2-font-color);
+    border-radius: 24px;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: small;
+ }
+
+.studentHomeCardClear p:first-of-type, .studentHomeCardDark p:first-of-type{
+    color: var(--font-color-p-first);
  }
 
  .homeGrid a{
