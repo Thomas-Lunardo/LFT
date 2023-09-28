@@ -1,6 +1,6 @@
 const links = document.querySelectorAll("nav li");
 
-burger.addEventListener("click", () => {
+icons.addEventListener("click", () => {
   nav.classList.toggle("active");
 });
 
