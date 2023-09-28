@@ -7,21 +7,22 @@
     --clear-background-color: rgba(172, 167, 203, 1);
 }
 
-*{
+* {
     margin: 0;
     padding: 0%;
     box-sizing: border-box;
     text-decoration: none;
-    list-style: none;  
+    list-style: none;
 }
 
 /*********** FONT NUNITO SANS ET SOURCE SANS 3 ******************/
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;1,6..12,200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
 
+    
 /************* MENU ************/
 
-nav{
+/* nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -29,7 +30,7 @@ nav{
 
 }
 
-nav ul{
+nav ul {
     background-color: var(--clear-background-color);
     width: 40%;
     border-radius: 16px;
@@ -41,25 +42,34 @@ nav ul{
     transition: 0.25s;
     }
 
-nav li{
+nav li {
 color: whitesmoke;
 padding-top: 40px;
 padding-left: 40px;
 }
 
-.burger{
+.burger {
     cursor: pointer;
     display: none;
     display: block;
+
 }
 
-.burger:before{
+.burger:before {
     content: "\2630"
 }
 
-nav h2{
-    color: var(--h2-font-color);
+.active .burger:before {
+    content: "\2715";
 }
+
+nav.active ul {
+    left: 0;
+  }
+
+nav h2 {
+    color: var(--h2-font-color);
+} */
 
 
 /*********** BODY **************/
@@ -71,43 +81,43 @@ body {
 h2 {
     color: var(--h2-color);
     font-family: var(--h2h3-font);
-    width: 100%;
-    height: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     letter-spacing: 0.2rem;
+
 }
 
 .citation {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
     font-size: 0.9rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 20px;
-    padding-left: 50px; 
-    padding-right: 18px;  
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin: auto;
+    text-align: center;
 }
 
 #author {
     font-family: var(--paragraph-font);
-    font-style: italic;
     font-size: 0.9rem;
-    display: inline-flex;
+    padding-bottom: 10%;
+    padding-top: 3%; 
+    width: 33vh;
+    margin: auto;
+    font-style: italic;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 50px;
-    padding-bottom: 30px;
-    padding-top: 5px; 
 }
 
 img {
-    width: 80%;
-    height: auto;
-    margin-left: 2.5em;
+    width: 45vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     border-radius: 5%;
+    
 }
 
 .adresse {
@@ -138,6 +148,14 @@ h3 {
     align-items: center;
 }
 
+h3 a:link {
+    color: var(--h3-color);
+}
+
+h3 a:visited {
+    color: var(--h3-color);
+}
+
 .slogan {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
@@ -146,5 +164,66 @@ h3 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 35px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/*********************$ MEDIA QUERY DESKTOP *******************/
+@media screen and (min-width: 1000px) {
+
+    /*********** NAV ***********/
+
+    /*********** BODY **********/
+
+    h2 {
+        font-size: 4rem;
+        text-align: left;
+        
+    }
+
+    .citation { 
+        font-size: 1.8rem;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        padding-top: 12%;
+        padding-right: 1%;
+    }
+
+    #author {
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 2%;
+        position: relative;
+    }
+
+    img {
+        width: 100vh;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: right;
+        border-radius: 5%;
+
+    }
+
+    .adresse {
+        font-size: 1.8rem;
+        padding-top: 10%;
+        padding-left: 3%;
+    }
+
+    h3 {
+        width: 25%;
+        margin-left: 39%;
+        font-size: 2.3rem;
+        margin-top: 8%;
+    }
+
+    .slogan{
+        font-size: 1.8rem;
+        padding-top: 8%;
+        padding-bottom: 5%;
+    }
 }
