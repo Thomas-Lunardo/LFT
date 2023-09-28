@@ -349,7 +349,10 @@ footer p:nth-of-type(5){
     color: var(--font-color-p-first);
 }
 
-footer img{
+.down{
+    width: 46px;
     position: absolute;
+    top: 350vh;
+    left: -20vw;
 }
 
