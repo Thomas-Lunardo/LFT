@@ -1,0 +1,16 @@
+/***** S T Y L E  S H E E T  F O R  T H E  D E S K T O P  ******/
+
+/***********HOME SCROLL ************* */
+
+.homeScroll hgroup{
+    padding-top: 250px;
+}
+
+.homeScroll img{
+    display: none;
+}
+
+/******************** H E A D E R ************************/
+header h2{
+    display: none;
+}

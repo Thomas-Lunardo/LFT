@@ -49,10 +49,14 @@
     opacity: 100%;
     height: 100vh;
     text-align: center;
+    position: relative;
 }
 
 .homeScroll hgroup{
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
+    padding-top: 140px;
 }
 
 .homeScroll h2{
@@ -70,17 +74,13 @@ text-shadow: var(--text-shadow);
 }
 
 .homeScroll img{
-    text-align: center;
+    padding-top: 250px;
 }
 
 
 /******************** H E A D E R ************************/
-header h2, h3{
+header h2{
     font-family: var(--h2-h3-font);
-}
-
-.homeScroll{
-    text-align: center;
 }
 
 /**************** M E N U  B U R G E R **************/
