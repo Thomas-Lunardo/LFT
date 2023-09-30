@@ -52,9 +52,6 @@
 }
 
 .homeScroll hgroup{
-    position: absolute;
-    top: 20vh;
-    left: 22vw;
     font-weight: bold;
 }
 
@@ -73,9 +70,7 @@ text-shadow: var(--text-shadow);
 }
 
 .homeScroll img{
-    position: absolute;
-    top: 68vh;
-    left: 16vw;
+    text-align: center;
 }
 
 
@@ -314,7 +309,7 @@ a img{
 
  .studentHomeCardDark p:nth-child(3){
     color: var(--clear-background-color);
- }
+ } 
 
 /* *********** F O O T E R ***************************************/
 footer {
