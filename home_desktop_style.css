@@ -18,11 +18,11 @@
 /**************** A L L  &  B O D Y ************************/
 
 hr{
-        border: solid 1px;
-        color: var(--dark-background-color);
-        width : 40px;
-        margin: 8px auto 40px;
-        display: block;
+    border: solid 1px;
+    color: var(--dark-background-color);
+    width : 40px;
+    margin: 8px auto 40px;
+    display: block;
 }
 
 /***********HOME SCROLL ************* */
@@ -86,22 +86,69 @@ header h2{
 width: 30%;
 }
 
-<<<<<<< HEAD
 /* ******************* M A I N ******************************* */
 
 /********** DESKTOP PART ************/
-
-
-=======
-header h2{
+main hgroup h1{
     display: none;
 }
->>>>>>> e0b65208fc48be7e4b916c9b1aed05ec1f15ce38
 
-header p:last-of-type{
-    margin-bottom: 10%;
+main hgroup h2{
+    display: block;
+    color: var(--dark-background-color);
     font-size: medium;
+    letter-spacing: 0.5rem;
 }
+
+main hgroup p{
+    display: none;
+}
+
+/* ********** HOME CARD ************/
+
+.homeGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(6, 300px);
+    grid-gap: 24px;
+    margin: 10px;
+    padding: 16px;
+}
+
+/***** ALL HOME CARDS  *******/
+.masterHomeCard p, .studentHomeCardClear p, .studentHomeCardDark p{
+    display: none;
+}
+
+.homeGrid a img{
+    display: none;
+}
+
+/**************** M A S T E R  H O M E  C A R D S  ************/
+.masterHomeCard:first-of-type{
+    background-image: url(./images/desktop/amina_small.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 2px;
+    }
+
+.masterHomeCard:nth-of-type(2){
+    background-image: url(./images/desktop/benjamin_small.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 2px;
+    }
+
+/***** STUDENT HOME CARDS *******/
+
+.studentHomeCard:first-of-type{
+    background-image: url(./images/desktop/victor_small.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 2px;
+    }
+
+
 
 /* ******************* M A I N ******************************* */
 
