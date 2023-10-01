@@ -3,28 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="wilders.css">
+    <link rel="stylesheet"  href="wilders.css">
     <title>Document</title>
 </head>
 <body>
-    <!-- <div class="parent">
-        <div class="div1"> </div>
-        <div class="div2"> </div>
-        <div class="div3"> </div>
-        <div class="div4"> </div>
-        <div class="div5"> </div>
-        <div class="div6"> </div>
-        <div class="div7"> </div>
-        <div class="div8"> </div>
-        <div class="div9"> </div>
-        <div class="div10"> </div>
-        <div class="div11"> </div>
-        <div class="div12"> </div>
-        </div> -->
+   <div class="container">
+        <?php
+      
+                $images = array(
+                './images/wilders/aminav2.png', './images/wilders/benjaminv2.png','./images/wilders/victorv2.png',
+                './images/wilders/thomasv2.png', './images/wilders/paulv2.png', './images/wilders/merwanv2.png',
+                './images/wilders/nickyv2.png', './images/wilders/pierrelouisv2.png','./images/wilders/audev2.png',
+                './images/wilders/ryadv2.png', './images/wilders/romainv2.png',
+                );
 
-        <?php    foreach ($teamwilders as $w){
-    echo '<a href="' . $w['lien'] . '"><img src =" ' .$w['image'] . '"/></a>';
-    };      
-    ?>
-</body>
+                $links = array(
+                './wildersamina.html', './wildersbenjamin.html', './wildersvictor.html', './wildersthomas.html',
+                './wilderspaul.html','./wildersmerwan.html','./wildersnicky.html', './wildersplouis.html', './wildersaude.html',
+                './wildersryad.html', './wildersromain.html',
+                );
+                
+                    for ($i = 0 ; $i< count($images); $i++){
+                    
+                    echo "<a href =  '$links[$i]' ><img src= '$images[$i]'/></a>";
+                          
+                }; ?>
+                </div>
+   </body>
 </html>
