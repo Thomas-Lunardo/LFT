@@ -15,6 +15,16 @@
     --text-shadow: px 0px 9px rgba(0,0,0,0.45);
 }
 
+/**************** A L L  &  B O D Y ************************/
+
+hr{
+    border: solid 1px;
+    color: var(--dark-background-color);
+    width : 40px;
+    margin: 8px auto 40px;
+    display: block;
+}
+
 /***********HOME SCROLL ************* */
 
 .homeScroll hgroup{
@@ -30,9 +40,6 @@ header h2{
     display: none;
 }
 
-/* ******************* M A I N ******************************* */
-
-/********** DESKTOP PART ************/
 .headerDesktopCards{
     display: block;
     text-align: center;
@@ -44,6 +51,18 @@ header h2{
     flex-direction: column;
     align-items: center;
     margin: 40px auto;
+}
+
+.headerDesktopCards div p:first-of-type{
+    letter-spacing: 0.5rem;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.headerDesktopCards div p:nth-of-type(2){
+    font-size:small;
+    text-align: center;
 }
 
 .headerDesktopCards hr{
@@ -66,5 +85,67 @@ header h2{
 .headerDesktopCardsGroup div{
 width: 30%;
 }
+
+/* ******************* M A I N ******************************* */
+
+/********** DESKTOP PART ************/
+main hgroup h1{
+    display: none;
+}
+
+main hgroup h2{
+    display: block;
+    color: var(--dark-background-color);
+    font-size: medium;
+    letter-spacing: 0.5rem;
+}
+
+main hgroup p{
+    display: none;
+}
+
+/* ********** HOME CARD ************/
+
+.homeGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(6, 300px);
+    grid-gap: 24px;
+    margin: 10px;
+    padding: 16px;
+}
+
+/***** ALL HOME CARDS  *******/
+.masterHomeCard p, .studentHomeCardClear p, .studentHomeCardDark p{
+    display: none;
+}
+
+.homeGrid a img{
+    display: none;
+}
+
+/**************** M A S T E R  H O M E  C A R D S  ************/
+.masterHomeCard:first-of-type{
+    background-image: url(./images/desktop/amina_small.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 2px;
+    }
+
+.masterHomeCard:nth-of-type(2){
+    background-image: url(./images/desktop/benjamin_small.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 2px;
+    }
+
+/***** STUDENT HOME CARDS *******/
+
+.studentHomeCard:first-of-type{
+    background-image: url(./images/desktop/victor_small.png);
+    background-repeat: no-repeat;
+    background-color: transparent;
+    border-radius: 2px;
+    }
 
 
