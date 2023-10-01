@@ -94,7 +94,7 @@ nav h2{
     display: flex;
     position:relative;
     width: 70px;
-    bottom: 136.5vh;
+    bottom: 146vh;
     left: 260px;
     justify-content: space-between;
 }
@@ -102,39 +102,43 @@ nav h2{
 .badge{
     display: flex;
     position: absolute;
-    top: 5px;
-    right:5px;
-    padding:2%;
+    bottom:90vh;
+    left:82vw;
+
 }
-a .arrowleft{
+a .arrowleft-mobile{
     border-radius: 50%;
 box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
 }
 
-a .arrowright{
+a .arrowright-mobile{
     border-radius: 50%;
 box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
 }
-.arrowleft {
+.arrowleft-mobile {
     display: flex;
     position: absolute;
     top: 50%;
     left:0.7vw;
+    
 }
 
-.arrowright {
+.arrowright-mobile {
     display: flex;
     position: absolute;
     top: 50%;
     right:0.7vw;
 }
 
+.arrowleft-desktop, .arrowright-desktop {
+    display: none;
+}
 /************* BOTTOM PART************/
 .buttonscroll{
     display: flex;
     position: relative;
     left: 40vw;
-    bottom: 115vh;
+    bottom: 118vh;
 }
 
 
@@ -143,7 +147,7 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     flex-direction: column;
     position: relative;
     width: 85%;
-    bottom: 115vh;
+    bottom: 118vh;
     left:8vw;
     color:var(--default-font-color);
 }   
@@ -167,7 +171,7 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     flex-direction: row;
     position:relative;
     width: 70px;
-    bottom: 184.5vh;
+    bottom: 194vh;
     left: 70vw;
     height:5vh;
     justify-content: space-between;
@@ -179,7 +183,7 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     width:30%;    
     border-radius: 10px;
     justify-content: center;
-    bottom:110vh;
+    bottom:109vh;
     left:35vw;
     padding: 2%;
     background-color: var(--white_background-color);
@@ -210,12 +214,11 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
         display: flex;
         position: relative;
         left: 3.5vw;
+        width : auto;
+        height:100vh;
     }
 
     .bottom-info{
-        display: flex;
-        flex-direction: column;
-        position: relative;
         height: 80vh;
         width: 30%;
         bottom: 85vh;
@@ -224,8 +227,6 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     }
 
     .bottom-text{
-        display:flex;
-        position: relative;
         bottom: 2vh;
         font-size: 20px;
         line-height: 2.5ch;
@@ -244,17 +245,14 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     }
 
     .badge{
-        display: flex;
-        position: absolute;
-        top: 11vh;
-        left: 44vw;
-        width: 9.5%;
+        bottom:98vh;
+        left: 91vw;
+        width: 5rem;
+        height: auto;
+        padding: Opx;
     }
 
     .bottom.social-icons{
-    display: flex;
-    flex-direction: row;
-    position:relative;
     width: 70px;
     bottom: 163.5vh;
     left: 75vw;
@@ -263,20 +261,33 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     }
 
     div.contactbutton{
-        padding:6px
+        padding:0.5rem;
     }
     .contactbutton{
-        display: flex;
-        position:relative;
         width:10%;    
-        border-radius: 10px;
-        justify-content: center;
         bottom:100vh;
         left:62vw;
-        background-color: var(--white_background-color);
+        background-color: var(--h2-font-color);
         box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 80px 25px, rgba(0, 0, 0, 0.2) 0px 0px 16px -5px;
     }
 
+    .contactbutton a{
+        color: var(--default-font-color);
+    }
+
+    .arrowleft-desktop { display: flex;
+        position: absolute;
+        top: 50%;
+        left:0.7vw;
+    
+    }
+    
+    .arrowright-desktop { display: flex;
+        position: absolute;
+        top: 50%;
+        right:0.7vw;
+    
+    }
 /*hide*/
 #background-mobile-amina,#background-mobile-benjamin,#background-mobile-victor,#background-mobile-thomas,
 #background-mobile-paul,#background-mobile-merwan,#background-mobile-nicky,#background-mobile-plouis,
@@ -297,6 +308,9 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
 }
 
 .top-quote{
+    display: none;
+}
+.arrowleft-mobile, .arrowright-mobile{
     display: none;
 }
 
