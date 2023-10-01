@@ -149,3 +149,21 @@ main hgroup p{
     }
 
 
+
+/* ******************* M A I N ******************************* */
+
+/********** DESKTOP PART ************/
+main hgroup h1{
+    display: none;
+}
+
+main hgroup h2{
+    display: block;
+    color: var(--dark-background-color);
+    font-size: medium;
+    letter-spacing: 0.5rem;
+}
+
+main hgroup p{
+    display: none;
+}
