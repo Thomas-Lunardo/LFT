@@ -188,7 +188,6 @@ nav h2{
 }
 
 
-
 /* ********* H GROUP ****************/
 main hgroup{
     text-align: center;
@@ -204,8 +203,8 @@ main hgroup p{
     color: var(--h2-font-color)
 }
 
-main hgroup h2{
-    color: var(--h2-font-color);
+main hgroup h2, hr{
+    display: none;
 }
 
 
