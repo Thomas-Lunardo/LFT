@@ -93,28 +93,29 @@ nav{
 
 nav ul{
     background-color: var(--dark-background-color);
-    width: 40%;
+    width: calc(100% / 3);
     border-radius: 16px;
     position: fixed;
     left: -100%;
     top: 6%;
-    width: 88%;
-    height: 40%;
+    width: 300px;
+    height: 300px;
     transition: 0.25s;
-    margin-left: 16px;
+    margin-left: 20px;
     z-index: 1;
 }
 
 
 nav li{
-    padding-top: 40px;
-    padding-left: 40px;
+    padding-top: 60px;
+    padding-left:60px;
 }
 
 nav ul a{
     color: var(--font-color-p-first);
     font-size: larger;
     font-size: calc(0,5rem + 1,5vw);
+    font-weight: bold;
 }
 
 #icons{
@@ -180,6 +181,13 @@ nav h2{
 }
 
 /* ******************* M A I N ******************************* */
+
+/********** DESKTOP PART ************/
+.headerDesktopCards{
+    display: none;
+}
+
+
 
 /* ********* H GROUP ****************/
 main hgroup{

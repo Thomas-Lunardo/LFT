@@ -1,5 +1,20 @@
 /***** S T Y L E  S H E E T  F O R  T H E  D E S K T O P  ******/
 
+/*************** C S S  V A R I A B L E S ****************/
+
+:root{
+    --main-font:'Nunito Sans', sans-serif;
+    --h2-h3-font: 'Source Sans 3', sans-serif;
+    --h1-font: 'Source Sans 3', sans-serif;
+    --h1-font-color: rgba(71, 69, 84, 1);
+    --h2-font-color: rgba(172, 167, 203, 1);
+    --font-color-p-first: whitesmoke;
+    --clear-background-color: rgba(172, 167, 203, 1);
+    --dark-background-color: rgba(71, 69, 84, 1);
+    --box-shadow: box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
+    --text-shadow: px 0px 9px rgba(0,0,0,0.45);
+}
+
 /***********HOME SCROLL ************* */
 
 .homeScroll hgroup{
@@ -14,3 +29,42 @@
 header h2{
     display: none;
 }
+
+/* ******************* M A I N ******************************* */
+
+/********** DESKTOP PART ************/
+.headerDesktopCards{
+    display: block;
+    text-align: center;
+    font-family: var(--h1-font);
+}
+
+.headerDesktopCards div:first-of-type{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.headerDesktopCards hr{
+    border: solid 1px;
+    color: var(--dark-background-color);
+    width : 40px;
+    margin: 8px auto 40px;
+}
+
+.headerDesktopCardsGroup{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+    margin: 40px auto;
+    width: 80%;
+}
+
+.headerDesktopCardsGroup div{
+width: 30%;
+}
+
+
