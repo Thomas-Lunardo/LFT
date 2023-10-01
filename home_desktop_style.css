@@ -30,9 +30,6 @@ header h2{
     display: none;
 }
 
-/* ******************* M A I N ******************************* */
-
-/********** DESKTOP PART ************/
 .headerDesktopCards{
     display: block;
     text-align: center;
@@ -66,5 +63,10 @@ header h2{
 .headerDesktopCardsGroup div{
 width: 30%;
 }
+
+/* ******************* M A I N ******************************* */
+
+/********** DESKTOP PART ************/
+
 
 
