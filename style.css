@@ -49,13 +49,14 @@
     opacity: 100%;
     height: 100vh;
     text-align: center;
+    position: relative;
 }
 
 .homeScroll hgroup{
-    position: absolute;
-    top: 20vh;
-    left: 22vw;
+    display: flex;
+    flex-direction: column;
     font-weight: bold;
+    padding-top: 140px;
 }
 
 .homeScroll h2{
@@ -73,19 +74,13 @@ text-shadow: var(--text-shadow);
 }
 
 .homeScroll img{
-    position: absolute;
-    top: 68vh;
-    left: 16vw;
+    padding-top: 250px;
 }
 
 
 /******************** H E A D E R ************************/
-header h2, h3{
+header h2{
     font-family: var(--h2-h3-font);
-}
-
-.homeScroll{
-    text-align: center;
 }
 
 /**************** M E N U  B U R G E R **************/
@@ -98,28 +93,29 @@ nav{
 
 nav ul{
     background-color: var(--dark-background-color);
-    width: 40%;
+    width: calc(100% / 3);
     border-radius: 16px;
     position: fixed;
     left: -100%;
     top: 6%;
-    width: 88%;
-    height: 40%;
+    width: 300px;
+    height: 300px;
     transition: 0.25s;
-    margin-left: 16px;
+    margin-left: 20px;
     z-index: 1;
 }
 
 
 nav li{
-    padding-top: 40px;
-    padding-left: 40px;
+    padding-top: 60px;
+    padding-left:60px;
 }
 
 nav ul a{
     color: var(--font-color-p-first);
     font-size: larger;
     font-size: calc(0,5rem + 1,5vw);
+    font-weight: bold;
 }
 
 #icons{
@@ -185,6 +181,13 @@ nav h2{
 }
 
 /* ******************* M A I N ******************************* */
+
+/********** DESKTOP PART ************/
+.headerDesktopCards{
+    display: none;
+}
+
+
 
 /* ********* H GROUP ****************/
 main hgroup{
@@ -314,7 +317,7 @@ a img{
 
  .studentHomeCardDark p:nth-child(3){
     color: var(--clear-background-color);
- }
+ } 
 
 /* *********** F O O T E R ***************************************/
 footer {
