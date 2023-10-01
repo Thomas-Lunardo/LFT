@@ -102,10 +102,10 @@ nav h2{
 .badge{
     display: flex;
     position: absolute;
-    bottom:90vh;
-    left:82vw;
-
+    bottom:88vh;
+    left:78vw;
 }
+
 a .arrowleft-mobile{
     border-radius: 50%;
 box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
@@ -115,12 +115,12 @@ a .arrowright-mobile{
     border-radius: 50%;
 box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
 }
+
 .arrowleft-mobile {
     display: flex;
     position: absolute;
     top: 50%;
     left:0.7vw;
-    
 }
 
 .arrowright-mobile {
@@ -140,7 +140,6 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     left: 40vw;
     bottom: 118vh;
 }
-
 
 .bottom-info{
     display: flex;
@@ -245,9 +244,9 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     }
 
     .badge{
-        bottom:98vh;
-        left: 91vw;
-        width: 5rem;
+        bottom: 91.5vh;
+        left: 94.5vw;
+        width: 4rem;
         height: auto;
         padding: Opx;
     }
@@ -263,6 +262,7 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     div.contactbutton{
         padding:0.5rem;
     }
+
     .contactbutton{
         width:10%;    
         bottom:100vh;
@@ -279,14 +279,11 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
         position: absolute;
         top: 50%;
         left:0.7vw;
-    
     }
-    
     .arrowright-desktop { display: flex;
         position: absolute;
         top: 50%;
         right:0.7vw;
-    
     }
 /*hide*/
 #background-mobile-amina,#background-mobile-benjamin,#background-mobile-victor,#background-mobile-thomas,
