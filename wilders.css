@@ -246,7 +246,7 @@ box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px
     .badge{
         display: flex;
         position: absolute;
-        top: 17vh;
+        top: 11vh;
         left: 44vw;
         width: 9.5%;
     }
