@@ -60,7 +60,10 @@ nav {
 nav h2 {
 	color: var(--h2-font-color);
 }
-/***************** TOP PART *****************/
+
+/*******************************************************************************
+ 							TOP PART
+ ******************************************************************************/
 
 .top-info {
 	display: flex;
@@ -134,7 +137,11 @@ a .arrowright-mobile {
 .arrowright-desktop {
 	display: none;
 }
-/************* BOTTOM PART************/
+
+/*******************************************************************************
+ 							BOTTOM PART
+ ******************************************************************************/
+
 .buttonscroll {
 	display: flex;
 	position: relative;
@@ -199,6 +206,17 @@ a .arrowright-mobile {
 	width: 20px;
 }
 
+.containers {
+	display: block;
+	position: relative;
+	padding: 0;
+	text-align: center;
+}
+
+.containers img {
+	max-height: 33%;
+}
+
 #background-desktop-amina,
 #background-desktop-benjamin,
 #background-desktop-victor,
@@ -213,8 +231,12 @@ a .arrowright-mobile {
 	display: none;
 }
 
-/* MEDIA QUERIES*/
-/* show*/
+p.rank {
+	display: none;
+}
+/*******************************************************************************
+ 							MEDIA QUERIES SHOWN
+ ******************************************************************************/
 
 @media screen and (min-width: 361px) {
 	#background-desktop-amina,
@@ -240,7 +262,6 @@ a .arrowright-mobile {
 		width: 30%;
 		bottom: 85vh;
 		left: 52vw;
-		color: var(--default-font-color);
 	}
 
 	.bottom-text {
@@ -261,6 +282,14 @@ a .arrowright-mobile {
 		position: relative;
 	}
 
+	p.rank {
+		display: flex;
+		position: relative;
+		width: 20%;
+		left: 52vw;
+		bottom: 157vh;
+		color: var(--dark-background-color);
+	}
 	.badge {
 		bottom: 91.5vh;
 		left: 94.5vw;
@@ -270,8 +299,10 @@ a .arrowright-mobile {
 	}
 
 	.bottom.social-icons {
+		display: flex;
+		position: relative;
 		width: 70px;
-		bottom: 163.5vh;
+		bottom: 167vh;
 		left: 75vw;
 		height: 5vh;
 		justify-content: space-between;
@@ -311,13 +342,23 @@ a .arrowright-mobile {
 
 	.containers {
 		overflow: hidden;
-		display: flex;
+		display: block;
 		position: relative;
-		width: 80vw;
-		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		top: 5vh;
+		width: 60vw;
+		height: 90vh;
+		text-align: center;
 	}
 
-	/*hide*/
+	.containers img {
+		max-height: 33%;
+	}
+
+	/*******************************************************************************
+ 							MEDIA QUERIES HIDDEN
+ ******************************************************************************/
 	#background-mobile-amina,
 	#background-mobile-benjamin,
 	#background-mobile-victor,
