@@ -44,39 +44,43 @@ header h2{
     display: none;
 }
 
-.headerDesktopCards{
+/***** first card *****/
+
+.headAboutCard{
     display: block;
     text-align: center;
     font-family: var(--h1-font);
 }
 
-.headerDesktopCards div:first-of-type{
+.headAboutCard div{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px auto;
 }
 
-.headerDesktopCards div p:first-of-type{
+.headAboutCard div p:nth-of-type(1){
     letter-spacing: 0.5rem;
     font-size: medium;
     text-align: center;
     margin-bottom: 8px;
 }
 
-.headerDesktopCards div p:nth-of-type(2){
+.headAboutCard div p:nth-of-type(2){
     font-size:small;
     text-align: center;
 }
 
-.headerDesktopCards hr{
+.headAboutCard hr{
     border: solid 1px;
     color: var(--dark-background-color);
     width : 40px;
     margin: 8px auto 40px;
 }
 
-.headerDesktopCardsGroup{
+/****  GROUP CARDS  *****/
+
+.mindCards{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -86,8 +90,19 @@ header h2{
     width: 80%;
 }
 
-.headerDesktopCardsGroup div{
-width: 30%;
+.mindCards div{
+width: 90px;
+}
+
+.mindCards div p{
+    letter-spacing: 0.5rem;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 8px;
+    }
+
+header p{
+    text-align: center;
 }
 
 /* ******************* M A I N ******************************* */
@@ -113,7 +128,7 @@ main hgroup p{
 .homeGrid{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(4, 300px);
     grid-gap: 24px;
     margin: 10px;
     padding: 16px;

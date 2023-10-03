@@ -183,7 +183,7 @@ nav h2{
 /* ******************* M A I N ******************************* */
 
 /********** DESKTOP PART ************/
-.headerDesktopCards{
+.headAboutCard, .mindCards, header p{
     display: none;
 }
 
