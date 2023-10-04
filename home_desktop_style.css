@@ -131,8 +131,7 @@ main hgroup p{
     grid-template-columns: repeat(3, 223px);
     grid-template-rows: repeat(4, 332px);
     grid-gap: 24px;
-    width: 100%;
-    justify-content: center;
+     justify-content: center;
     margin-bottom: 150px;
 }
 
@@ -228,10 +227,33 @@ main hgroup p{
     background-image: url(./images/desktop/romain_small.png);
     }
 
-#A_propos{
+#A_propos {
     background-repeat: no-repeat;
     background-color: transparent;
     background-image: url(./images/wilders/wilders.png);
-    }
+}
 
     /* *********** F O O T E R ***************************************/
+
+footer hgroup{
+    margin: 162px;
+    padding-top: 155px;
+    text-align: justify;
+}
+
+.down{
+    width: 46px;
+    position: relative;
+    top: 9vh;
+    left: 48vw;
+}
+
+@media screen and (max-width: 750px) {
+    .homeGrid{
+        grid-template-columns: repeat(2, 223px);
+        grid-template-rows: repeat(6, 332px);
+        grid-gap: 24px;
+        margin-bottom: 150px;
+    }
+}
+
