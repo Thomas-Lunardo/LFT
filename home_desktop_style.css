@@ -36,54 +36,74 @@ hr{
 }
 
 /******************** H E A D E R ************************/
+
+/******* NAV BAR *****/
+
+
 header h2{
     display: none;
 }
 
-.headerDesktopCards{
+.headAboutCard, .mindCards, header p{
+    display: block;
+}
+
+/***** first card *****/
+
+.headAboutCard{
     display: block;
     text-align: center;
     font-family: var(--h1-font);
 }
 
-.headerDesktopCards div:first-of-type{
+.headAboutCard div{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 40px auto;
 }
 
-.headerDesktopCards div p:first-of-type{
+.headAboutCard div p:nth-of-type(1){
     letter-spacing: 0.5rem;
     font-size: medium;
     text-align: center;
     margin-bottom: 8px;
 }
 
-.headerDesktopCards div p:nth-of-type(2){
+.headAboutCard div p:nth-of-type(2){
     font-size:small;
     text-align: center;
 }
 
-.headerDesktopCards hr{
+.headAboutCard hr{
     border: solid 1px;
     color: var(--dark-background-color);
     width : 40px;
     margin: 8px auto 40px;
 }
 
-.headerDesktopCardsGroup{
+/****  GROUP CARDS  *****/
+
+.mindCards{
     display: flex;
-    flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    flex-wrap: wrap;
     gap: 3rem;
     margin: 40px auto;
     width: 80%;
 }
 
-.headerDesktopCardsGroup div{
-width: 30%;
+
+
+.mindCards div p{
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 8px;
+    }
+
+header p{
+    text-align: center;
 }
 
 /* ******************* M A I N ******************************* */
@@ -104,18 +124,23 @@ main hgroup p{
     display: none;
 }
 
-/* ********** HOME CARD ************/
+/*********** HOME CARD ************/
 
 .homeGrid{
     display: grid;
     grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(6, 300px);
+    grid-template-rows: repeat(4, 300px);
     grid-gap: 24px;
     margin: 10px;
     padding: 16px;
 }
 
-/***** ALL HOME CARDS  *******/
+/********* ALL HOME CARDS  *******/
+.masterHomeCard, .studentHomeCardClear, .studentHomeCardDark{
+    border-radius: 2px;
+    padding: 0;
+}
+
 .masterHomeCard p, .studentHomeCardClear p, .studentHomeCardDark p{
     display: none;
 }
@@ -125,45 +150,74 @@ main hgroup p{
 }
 
 /**************** M A S T E R  H O M E  C A R D S  ************/
-.masterHomeCard:first-of-type{
-    background-image: url(./images/desktop/amina_small.png);
+#ChakirHome{
     background-repeat: no-repeat;
     background-color: transparent;
-    border-radius: 2px;
+    background-image: url(./images/desktop/amina_small.png);
     }
 
-.masterHomeCard:nth-of-type(2){
-    background-image: url(./images/desktop/benjamin_small.png);
+#RichardHome{
     background-repeat: no-repeat;
     background-color: transparent;
+    background-image: url(./images/desktop/benjamin_small.png);
     border-radius: 2px;
     }
 
 /***** STUDENT HOME CARDS *******/
 
-.studentHomeCard:first-of-type{
-    background-image: url(./images/desktop/victor_small.png);
+#AnclinHome{
     background-repeat: no-repeat;
     background-color: transparent;
-    border-radius: 2px;
+    background-image: url(./images/desktop/victor_small.png);
     }
 
+#LunardoHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/thomas_small.png);
+    }
 
+#HernandezHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/paul_small.png);
+    }
 
-/* ******************* M A I N ******************************* */
+#Si_TayebHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/merwan_small.png);
+    }
 
-/********** DESKTOP PART ************/
-main hgroup h1{
+#RasamoelinaHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/nicky_small.png);
+    }
+
+#BonnierHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/pierrelouis_small.png);
+    }
+
+#MonnetHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/aude_small.png);
+    }
+#ZaatourHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/ryad_small.png);
+    }
+
+#GuiotHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/romain_small.png);
+    }
+
+#A_propos{
     display: none;
-}
-
-main hgroup h2{
-    display: block;
-    color: var(--dark-background-color);
-    font-size: medium;
-    letter-spacing: 0.5rem;
-}
-
-main hgroup p{
-    display: none;
-}
+    }
