@@ -241,10 +241,10 @@ a img{
     left: 22vw;
  }
 
- #apropos{
+ .aPropos{
     height: auto;
     position: relative;
-    top: 6vh;
+    top: 7vh;
     left: 22vw;
  }
 
