@@ -128,17 +128,19 @@ main hgroup p{
 
 .homeGrid{
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(4, 300px);
+    grid-template-columns: repeat(3, 223px);
+    grid-template-rows: repeat(4, 332px);
     grid-gap: 24px;
-    margin: 10px;
-    padding: 16px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 150px;
 }
 
 /********* ALL HOME CARDS  *******/
 .masterHomeCard, .studentHomeCardClear, .studentHomeCardDark{
     border-radius: 2px;
     padding: 0;
+    margin: 0;
 }
 
 .masterHomeCard p, .studentHomeCardClear p, .studentHomeCardDark p{
@@ -146,7 +148,15 @@ main hgroup p{
 }
 
 .homeGrid a img{
-    display: none;
+        position: relative;
+        top: 85%;
+        left: 1vw;
+}
+
+#A_propos a img{
+    position: relative;
+    top: 60%;
+    left: 2vw;
 }
 
 /**************** M A S T E R  H O M E  C A R D S  ************/
@@ -219,5 +229,9 @@ main hgroup p{
     }
 
 #A_propos{
-    display: none;
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/wilders/wilders.png);
     }
+
+    /* *********** F O O T E R ***************************************/
