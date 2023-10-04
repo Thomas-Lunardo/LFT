@@ -29,8 +29,8 @@ function showwilders()
         './wildersnicky.html',
         './wildersaude.html',
         './aboutus.html',
-        './wildersplouis.html',
         './wildersryad.html',
+        './wildersplouis.html',
         './wildersromain.html',
 
     );
