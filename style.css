@@ -9,7 +9,7 @@
     --font-color-p-first: whitesmoke;
     --clear-background-color: rgba(172, 167, 203, 1);
     --dark-background-color: rgba(71, 69, 84, 1);
-    --box-shadow: box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
+    --box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
     --text-shadow: px 0px 9px rgba(0,0,0,0.45);
 
     /* --background-image-mixed: url(./assets/background.png), rgba(172, 167, 203, 1); */
@@ -74,14 +74,14 @@ text-shadow: var(--text-shadow);
 }
 
 .homeScroll img{
-    padding-top: 250px;
+    width: 46px;
+    position: relative;
+    top: 30vh;
+    left: 1vw;
 }
 
 
 /******************** H E A D E R ************************/
-header h2{
-    font-family: var(--h2-h3-font);
-}
 
 /**************** M E N U  B U R G E R **************/
 nav{
@@ -178,6 +178,8 @@ nav.active2 ul {
 
 nav h2{
     color: var(--h2-font-color);
+    font-family: var(--h2-h3-font);
+    text-shadow: 1px 1px 3px rgba(186,154,230,0.16);
 }
 
 /* ******************* M A I N ******************************* */
@@ -224,6 +226,7 @@ main hgroup h2, hr{
     padding-top: 16px;
     padding-left: 16px;
     font-size: small;
+    box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
 }
 
 /**************** M A S T E R  H O M E  C A R D S  ************/
@@ -232,6 +235,7 @@ main hgroup h2, hr{
 
 .masterHomeCard p:first-of-type .studentHomeCardClear p:first-of-type, .studentHomeCardDark p:first-of-type{
     color: var(--font-color-p-first);
+
  }
 
 a img{
@@ -288,6 +292,7 @@ a img{
     padding-top: 16px;
     padding-left: 16px;
     font-size: small;
+    box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
  }
 
  .studentHomeCardClear p:nth-child(2){
@@ -304,6 +309,7 @@ a img{
     padding-top: 16px;
     padding-left: 16px;
     font-size: small;
+    box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
  }
 
  .studentHomeCardDark p:nth-child(2){
@@ -358,7 +364,8 @@ footer button {
     border-radius: 8px;
     border: none;
     margin-bottom: 16px;
-    box-shadow: var(--box-shadow);
+    box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px,
+    rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
     font-weight: bold;
 }
 
