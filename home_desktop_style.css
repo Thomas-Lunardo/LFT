@@ -116,8 +116,9 @@ main hgroup h1{
 main hgroup h2{
     display: block;
     color: var(--dark-background-color);
-    font-size: medium;
+    font-size: x-large;
     letter-spacing: 0.5rem;
+    padding-top: 24px;
 }
 
 main hgroup p{
@@ -128,11 +129,20 @@ main hgroup p{
 
 .homeGrid{
     display: grid;
-    grid-template-columns: repeat(3, 223px);
-    grid-template-rows: repeat(4, 332px);
-    grid-gap: 24px;
+    grid-template-columns: repeat(3, 221px);
+    grid-template-rows: repeat(4, 326px);
+    grid-gap: 32px;
      justify-content: center;
     margin-bottom: 150px;
+}
+
+@media screen and (max-width: 750px) {
+    .homeGrid{
+        grid-template-columns: repeat(2, 221px);
+        grid-template-rows: repeat(6, 326px);
+        grid-gap: 12px;
+        margin-bottom: 150px;
+    }
 }
 
 /********* ALL HOME CARDS  *******/
@@ -236,24 +246,21 @@ main hgroup p{
     /* *********** F O O T E R ***************************************/
 
 footer hgroup{
-    margin: 162px;
+    margin: 60px;
     padding-top: 155px;
     text-align: justify;
+}
+
+footer button {
+    width: 300px;
 }
 
 .down{
     width: 46px;
     position: relative;
-    top: 9vh;
-    left: 48vw;
+    top: 10vh;
+    left: 250px;
 }
 
-@media screen and (max-width: 750px) {
-    .homeGrid{
-        grid-template-columns: repeat(2, 223px);
-        grid-template-rows: repeat(6, 332px);
-        grid-gap: 24px;
-        margin-bottom: 150px;
-    }
-}
+
 
