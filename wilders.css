@@ -234,11 +234,25 @@ a .arrowright-mobile {
 p.rank {
 	display: none;
 }
+
+#background-mobile-amina,
+#background-mobile-benjamin,
+#background-mobile-victor,
+#background-mobile-thomas,
+#background-mobile-paul,
+#background-mobile-merwan,
+#background-mobile-nicky,
+#background-mobile-plouis,
+#background-mobile-aude,
+#background-mobile-ryad,
+#background-mobile-romain {
+	width: 100vw;
+}
 /*******************************************************************************
  							MEDIA QUERIES SHOWN
  ******************************************************************************/
 
-@media screen and (min-width: 361px) {
+@media screen and (min-width: 670px) {
 	#background-desktop-amina,
 	#background-desktop-benjamin,
 	#background-desktop-victor,
