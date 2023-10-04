@@ -1,0 +1,237 @@
+/***** S T Y L E  S H E E T  F O R  T H E  D E S K T O P  ******/
+
+/*************** C S S  V A R I A B L E S ****************/
+
+:root{
+    --main-font:'Nunito Sans', sans-serif;
+    --h2-h3-font: 'Source Sans 3', sans-serif;
+    --h1-font: 'Source Sans 3', sans-serif;
+    --h1-font-color: rgba(71, 69, 84, 1);
+    --h2-font-color: rgba(172, 167, 203, 1);
+    --font-color-p-first: whitesmoke;
+    --clear-background-color: rgba(172, 167, 203, 1);
+    --dark-background-color: rgba(71, 69, 84, 1);
+    --box-shadow: box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
+    --text-shadow: px 0px 9px rgba(0,0,0,0.45);
+}
+
+/**************** A L L  &  B O D Y ************************/
+
+hr{
+    border: solid 1px;
+    color: var(--dark-background-color);
+    width : 40px;
+    margin: 8px auto 40px;
+    display: block;
+}
+
+/***********HOME SCROLL ************* */
+
+.homeScroll hgroup{
+    padding-top: 250px;
+}
+
+.homeScroll img{
+    display: none;
+}
+
+/******************** H E A D E R ************************/
+
+/******* NAV BAR *****/
+
+
+header h2{
+    display: none;
+}
+
+.headAboutCard, .mindCards, header p{
+    display: block;
+}
+
+/***** first card *****/
+
+.headAboutCard{
+    display: block;
+    text-align: center;
+    font-family: var(--h1-font);
+}
+
+.headAboutCard div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+}
+
+.headAboutCard div p:nth-of-type(1){
+    letter-spacing: 0.5rem;
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.headAboutCard div p:nth-of-type(2){
+    font-size:small;
+    text-align: center;
+}
+
+.headAboutCard hr{
+    border: solid 1px;
+    color: var(--dark-background-color);
+    width : 40px;
+    margin: 8px auto 40px;
+}
+
+/****  GROUP CARDS  *****/
+
+.mindCards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 40px auto;
+    width: 80%;
+}
+
+
+
+.mindCards div p{
+    font-size: medium;
+    text-align: center;
+    margin-bottom: 8px;
+    }
+
+header p{
+    text-align: center;
+}
+
+/* ******************* M A I N ******************************* */
+
+/********** DESKTOP PART ************/
+main hgroup h1{
+    display: none;
+}
+
+main hgroup h2{
+    display: block;
+    color: var(--dark-background-color);
+    font-size: medium;
+    letter-spacing: 0.5rem;
+}
+
+main hgroup p{
+    display: none;
+}
+
+/*********** HOME CARD ************/
+
+.homeGrid{
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    grid-template-rows: repeat(4, 332px);
+    grid-gap: 24px;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+/********* ALL HOME CARDS  *******/
+.masterHomeCard, .studentHomeCardClear, .studentHomeCardDark{
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+}
+
+.masterHomeCard p, .studentHomeCardClear p, .studentHomeCardDark p{
+    display: none;
+}
+
+.homeGrid a img{
+        position: relative;
+        top: 85%;
+        left: 1vw;
+}
+
+#A_propos a img{
+    position: relative;
+    top: 60%;
+    left: 2vw;
+}
+
+/**************** M A S T E R  H O M E  C A R D S  ************/
+#ChakirHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/amina_small.png);
+    }
+
+#RichardHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/benjamin_small.png);
+    border-radius: 2px;
+    }
+
+/***** STUDENT HOME CARDS *******/
+
+#AnclinHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/victor_small.png);
+    }
+
+#LunardoHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/thomas_small.png);
+    }
+
+#HernandezHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/paul_small.png);
+    }
+
+#Si_TayebHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/merwan_small.png);
+    }
+
+#RasamoelinaHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/nicky_small.png);
+    }
+
+#BonnierHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/pierrelouis_small.png);
+    }
+
+#MonnetHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/aude_small.png);
+    }
+#ZaatourHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/ryad_small.png);
+    }
+
+#GuiotHome{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/desktop/romain_small.png);
+    }
+
+#A_propos{
+    background-repeat: no-repeat;
+    background-color: transparent;
+    background-image: url(./images/wilders/wilders.png);
+    }
+
+    /* *********** F O O T E R ***************************************/

@@ -10,6 +10,7 @@
     --clear-background-color: rgba(172, 167, 203, 1);
     --dark-background-color: rgba(71, 69, 84, 1);
     --box-shadow: box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
+    --text-shadow: px 0px 9px rgba(0,0,0,0.45);
 
     /* --background-image-mixed: url(./assets/background.png), rgba(172, 167, 203, 1); */
 }
@@ -48,32 +49,38 @@
     opacity: 100%;
     height: 100vh;
     text-align: center;
+    position: relative;
 }
 
 .homeScroll hgroup{
-padding-top: 35%;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+    padding-top: 140px;
 }
 
 .homeScroll h2{
-        font-size: 5rem;
-        text-shadow: 0px 0px 9px rgba(0,0,0,0.45);
-        letter-spacing: 16px;
-        color: whitesmoke;
+    font-size: 5rem;
+    text-shadow: 0px 0px 9px rgba(0,0,0,0.45);
+    letter-spacing: 16px;
+    color:var(--font-color-p-first);
 }
 
 .homeScroll h3{
-    font-size: large;
-    color: whitesmoke;
-    letter-spacing: 6px;
+font-size: large;
+color: var(--font-color-p-first);
+letter-spacing: 6px;
+text-shadow: var(--text-shadow);
 }
+
+.homeScroll img{
+    padding-top: 250px;
+}
+
 
 /******************** H E A D E R ************************/
-header h2, h3{
+header h2{
     font-family: var(--h2-h3-font);
-}
-
-.homeScroll{
-    text-align: center;
 }
 
 /**************** M E N U  B U R G E R **************/
@@ -86,27 +93,29 @@ nav{
 
 nav ul{
     background-color: var(--dark-background-color);
-    width: 40%;
+    width: calc(100% / 3);
     border-radius: 16px;
     position: fixed;
     left: -100%;
     top: 6%;
-    width: 88%;
-    height: 40%;
+    width: 300px;
+    height: 300px;
     transition: 0.25s;
-    margin-left: 16px;
-    }
+    margin-left: 20px;
+    z-index: 1;
+}
 
 
 nav li{
-    padding-top: 40px;
-    padding-left: 40px;
+    padding-top: 60px;
+    padding-left:60px;
 }
 
 nav ul a{
     color: var(--font-color-p-first);
     font-size: larger;
     font-size: calc(0,5rem + 1,5vw);
+    font-weight: bold;
 }
 
 #icons{
@@ -173,6 +182,12 @@ nav h2{
 
 /* ******************* M A I N ******************************* */
 
+/********** DESKTOP PART ************/
+.headAboutCard, .mindCards, header p{
+    display: none;
+}
+
+
 /* ********* H GROUP ****************/
 main hgroup{
     text-align: center;
@@ -188,8 +203,8 @@ main hgroup p{
     color: var(--h2-font-color)
 }
 
-main hgroup h2{
-    color: var(--h2-font-color);
+main hgroup h2, hr{
+    display: none;
 }
 
 
@@ -220,10 +235,17 @@ main hgroup h2{
  }
 
 a img{
-    width: 35px;
     height: auto;
-    margin-top: 13%;
-    margin-left: 65%;
+    position: relative;
+    top: 2vh;
+    left: 22vw;
+ }
+
+ .aPropos{
+    height: auto;
+    position: relative;
+    top: 7vh;
+    left: 22vw;
  }
 
 /**** ALL MASTER HOME CARDS  ****/
@@ -292,13 +314,14 @@ a img{
 
  .studentHomeCardDark p:nth-child(3){
     color: var(--clear-background-color);
- }
+ } 
 
 /* *********** F O O T E R ***************************************/
 footer {
     background-image: url(/assets/background_big.png);
     opacity: 100%;
     height: 100vh;
+    width: 100vw;
 }
 
 footer hgroup{
@@ -336,8 +359,12 @@ footer button {
     border: none;
     margin-bottom: 16px;
     box-shadow: var(--box-shadow);
-    color: var(--clear-background-color);
     font-weight: bold;
+}
+
+footer button a{
+    color: var(--clear-background-color);
+    text-shadow: var(--text-shadow);
 }
 
 footer p:nth-of-type(4){
@@ -351,8 +378,8 @@ footer p:nth-of-type(5){
 
 .down{
     width: 46px;
-    position: absolute;
-    top: 350vh;
-    left: -20vw;
+    position: relative;
+    top: 30vh;
+    left: 43vw;
 }
 

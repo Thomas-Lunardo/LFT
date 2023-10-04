@@ -1,200 +1,409 @@
 /*************** C S S  V A R I A B L E S ****************/
 
-:root{
-    --main-font:'Nunito Sans', sans-serif;
-    --h2-h3-font: 'Source Sans 3', sans-serif;
-    --h1-font: 'Fira Sans', sans-serif;
-    --h1-font-color: rgba(71, 69, 84, 1);
-    --h2-font-color: rgba(172, 167, 203, 1);
-    --clear-background-color: rgba(172, 167, 203, 1);
-    --dark-background-color: rgba(71, 69, 84, 1);
-    --default-font-color: whitesmoke;
-    --white_background-color : #F4F4F4;
-   }
+:root {
+	--main-font: "Nunito Sans", sans-serif;
+	--h2-h3-font: "Source Sans 3", sans-serif;
+	--h1-font: "Fira Sans", sans-serif;
+	--h1-font-color: rgba(71, 69, 84, 1);
+	--h2-font-color: rgba(172, 167, 203, 1);
+	--clear-background-color: rgba(172, 167, 203, 1);
+	--dark-background-color: rgba(71, 69, 84, 1);
+	--default-font-color: whitesmoke;
+	--white_background-color: #f4f4f4;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
 
 /*********** G O O G L E  F O N T *************/
 
 /* Nunito sans for the main text*/
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap");
 
 /* Source Sans 3 for h2 and h3(not Source Sans Pro on fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap");
 
 /* Fira sans for h1*/
-@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap");
 
 /**************** A L L  &  B O D Y ************************/
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    scroll-behavior: smooth;
-    font-family: var(--main-font);
-    text-decoration: none;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	scroll-behavior: smooth;
+	font-family: var(--main-font);
+	text-decoration: none;
 }
-
+main {
+	width: 100%;
+	height: 100vh;
+}
 /**************** N A V  B A R R E **************/
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
 }
 
-.burger{
-    cursor: pointer;
-    display: none;
-    display: block;
+.burger {
+	cursor: pointer;
+	display: none;
+	display: block;
 }
 
-.burger:before{
-    content: "\2630"
+.burger:before {
+	content: "\2630";
 }
 
-nav h2{
-    color: var(--h2-font-color);
-}
-/***************** TOP PART *****************/
-
-.top.block{
-    width: 100%;
-    height: 50vh;
+nav h2 {
+	color: var(--h2-font-color);
 }
 
-.top.info{
-    display: flex;
-    flex-direction: column;    
-    position: relative;
-    width: 100%;
-    bottom: 127vh;
-    color:var(--default-font-color);
+/*******************************************************************************
+ 							TOP PART
+ ******************************************************************************/
+
+.top-info {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 85%;
+	left: 5vw;
+	bottom: 125vh;
+	color: var(--default-font-color);
+}
+.top-info > h2 {
+	font-weight: normal;
 }
 
-.top.info>p{
-    font-family:var(--h2-h3-font);
-    padding-top: 8%;
-  text-align: center;  
+.top-quote {
+	display: flex;
+	position: relative;
+	width: 90%;
+	font-family: var(--h2-h3-font);
+	color: var(--default-font-color);
+	padding-top: 8%;
+	text-align: center;
+	justify-content: space-around;
+	bottom: 126vh;
+	left: 5vw;
 }
 
-.top.social-icons{
-    display: flex;
-    position:relative;
-    width: 70px;
-    bottom:58rem;
-    left: 260px;
-    justify-content: space-between;
+.top.social-icons {
+	display: flex;
+	position: relative;
+	width: 70px;
+	bottom: 146vh;
+	left: 260px;
+	justify-content: space-between;
 }
 
-.badge{
-    display: flex;
-    position: absolute;
-    top: 5px;
-    right:5px;
-    padding:2%;
-}
-a .arrowleft{
-    border-radius: 50%;
-box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
+.badge {
+	display: flex;
+	position: absolute;
+	bottom: 88vh;
+	left: 78vw;
 }
 
-a .arrowright{
-    border-radius: 50%;
-box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
-}
-.arrowleft {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    left:5px;
-
+a .arrowleft-mobile {
+	border-radius: 50%;
+	box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px,
+		rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
 }
 
-.arrowright {
-    display: flex;
-    position: absolute;
-    top: 50%;
-    right:5px;
+a .arrowright-mobile {
+	border-radius: 50%;
+	box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px,
+		rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
 }
 
-/************* BOTTOM PART************/
-.bottom {
-    width: 100%;
-    height: 50vh;
+.arrowleft-mobile {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	left: 0.7vw;
 }
 
-.buttonscroll{
-    display: flex;
-    position: absolute;
-    left: 41vw;
-    top: 100vh;
+.arrowright-mobile {
+	display: flex;
+	position: absolute;
+	top: 50%;
+	right: 0.7vw;
 }
 
-
-.bottom.info{
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    top:26rem;
-    color:var(--default-font-color);
-}   
-
-.bottom.info>p{
-    width:100%;
-    font-family:var(--h2-h3-font);
-    font-size: 20px;
-    padding: 8%;
-    line-height: 2.5ch;
+.arrowleft-desktop,
+.arrowright-desktop {
+	display: none;
 }
 
-.bottom.social-icons{
-    display: flex;
-    flex-direction: row;
-    position:relative;
-    width: 70px;
-    top:15vh;
-    left:70vw;
-    justify-content: space-between;
-}
-/************* BOTH ************/
+/*******************************************************************************
+ 							BOTTOM PART
+ ******************************************************************************/
 
-
-.info>h2{
-    font-family:var(--main-font);    
-    padding-left: 8%;
-    font-weight: lighter;
-    font-size: 16px;
+.buttonscroll {
+	display: flex;
+	position: relative;
+	left: 40vw;
+	bottom: 118vh;
 }
 
-.info>h1{
-    font-family:var(--h1-font);    
-    padding-left: 8%;
-    font-weight: bold;
-    font-size:36px;
+.bottom-info {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	width: 85%;
+	bottom: 118vh;
+	left: 8vw;
+	color: var(--default-font-color);
 }
 
-.social-icons img{
-    width:20px;
+.bottom-info > h2 {
+	font-weight: normal;
 }
 
-.contactbutton{
-    display: flex;
-    flex-direction: row;
-    position:absolute;
-    top:450px;
-    left:125px;
-    border-radius: 10px;
-    width:30%;
-    justify-content: center;
-    padding: 2%;
-    background-color: var(--white_background-color);
-    box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px, rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
+.bottom-text {
+	display: flex;
+	width: 100%;
+	height: 60vh;
+	font-size: 20px;
+	padding-top: 6%;
+	line-height: 2.5ch;
+	font-weight: lighter;
 }
 
-.contactbutton a{
-        color: var(--dark-background-color);
+.bottom.social-icons {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	width: 70px;
+	bottom: 194vh;
+	left: 70vw;
+	height: 5vh;
+	justify-content: space-between;
+}
+
+.contactbutton {
+	display: flex;
+	position: relative;
+	width: 30%;
+	border-radius: 10px;
+	justify-content: center;
+	bottom: 109vh;
+	left: 35vw;
+	padding: 2%;
+	background-color: var(--white_background-color);
+	box-shadow: rgba(50, 50, 93, 0.3) 0px 13px 80px 25px,
+		rgba(0, 0, 0, 0.9) 0px 0px 16px -5px;
+}
+
+.contactbutton a {
+	color: var(--dark-background-color);
+}
+
+.social-icons img {
+	width: 20px;
+}
+
+.containers {
+	display: block;
+	position: relative;
+	padding: 0;
+	text-align: center;
+}
+
+.containers img {
+	max-height: 33%;
+}
+
+#background-desktop-amina,
+#background-desktop-benjamin,
+#background-desktop-victor,
+#background-desktop-thomas,
+#background-desktop-paul,
+#background-desktop-merwan,
+#background-desktop-nicky,
+#background-desktop-plouis,
+#background-desktop-aude,
+#background-desktop-ryad,
+#background-desktop-romain {
+	display: none;
+}
+
+p.rank {
+	display: none;
+}
+
+#background-mobile-amina,
+#background-mobile-benjamin,
+#background-mobile-victor,
+#background-mobile-thomas,
+#background-mobile-paul,
+#background-mobile-merwan,
+#background-mobile-nicky,
+#background-mobile-plouis,
+#background-mobile-aude,
+#background-mobile-ryad,
+#background-mobile-romain {
+	width: 100vw;
+}
+/*******************************************************************************
+ 							MEDIA QUERIES SHOWN
+ ******************************************************************************/
+
+@media screen and (min-width: 670px) {
+	#background-desktop-amina,
+	#background-desktop-benjamin,
+	#background-desktop-victor,
+	#background-desktop-thomas,
+	#background-desktop-paul,
+	#background-desktop-merwan,
+	#background-desktop-nicky,
+	#background-desktop-plouis,
+	#background-desktop-aude,
+	#background-desktop-ryad,
+	#background-desktop-romain {
+		display: flex;
+		position: relative;
+		left: 3.5vw;
+		width: auto;
+		height: 100vh;
+	}
+
+	.bottom-info {
+		height: 80vh;
+		width: 30%;
+		bottom: 85vh;
+		left: 52vw;
+	}
+
+	.bottom-text {
+		bottom: 2vh;
+		font-size: 20px;
+		line-height: 2.5ch;
+		font-weight: lighter;
+		color: var(--dark-background-color);
+		padding-top: 4rem;
+	}
+
+	.bottom-info > h2 {
+		color: var(--h1-font-color);
+		position: relative;
+	}
+	.bottom-info > h1 {
+		color: var(--h2-font-color);
+		position: relative;
+	}
+
+	p.rank {
+		display: flex;
+		position: relative;
+		width: 20%;
+		left: 52vw;
+		bottom: 157vh;
+		color: var(--dark-background-color);
+	}
+	.badge {
+		bottom: 91.5vh;
+		left: 94.5vw;
+		width: 4rem;
+		height: auto;
+		padding: Opx;
+	}
+
+	.bottom.social-icons {
+		display: flex;
+		position: relative;
+		width: 70px;
+		bottom: 167vh;
+		left: 75vw;
+		height: 5vh;
+		justify-content: space-between;
+	}
+
+	div.contactbutton {
+		padding: 0.5rem;
+	}
+
+	.contactbutton {
+		width: 10%;
+		bottom: 100vh;
+		left: 62vw;
+		background-color: var(--h2-font-color);
+		box-shadow: rgba(50, 50, 93, 0.1) 0px 13px 80px 25px,
+			rgba(0, 0, 0, 0.2) 0px 0px 16px -5px;
+	}
+
+	.contactbutton a {
+		color: var(--default-font-color);
+	}
+
+	.arrowleft-desktop {
+		display: flex;
+		position: absolute;
+		top: 50%;
+		left: 0.7vw;
+		scale: 1.2;
+	}
+	.arrowright-desktop {
+		display: flex;
+		position: absolute;
+		top: 50%;
+		right: 0.7vw;
+		scale: 1.2;
+	}
+
+	.containers {
+		overflow: hidden;
+		display: block;
+		position: relative;
+		margin-left: auto;
+		margin-right: auto;
+		top: 5vh;
+		width: 60vw;
+		height: 90vh;
+		text-align: center;
+	}
+
+	.containers img {
+		max-height: 33%;
+	}
+
+	/*******************************************************************************
+ 							MEDIA QUERIES HIDDEN
+ ******************************************************************************/
+	#background-mobile-amina,
+	#background-mobile-benjamin,
+	#background-mobile-victor,
+	#background-mobile-thomas,
+	#background-mobile-paul,
+	#background-mobile-merwan,
+	#background-mobile-nicky,
+	#background-mobile-plouis,
+	#background-mobile-aude,
+	#background-mobile-ryad,
+	#background-mobile-romain {
+		display: none;
+	}
+
+	.buttonscroll {
+		display: none;
+	}
+
+	.top-info {
+		display: none;
+	}
+
+	.top.social-icons {
+		display: none;
+	}
+
+	.top-quote {
+		display: none;
+	}
+	.arrowleft-mobile,
+	.arrowright-mobile {
+		display: none;
+	}
 }
