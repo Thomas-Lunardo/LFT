@@ -84,66 +84,55 @@ text-shadow: var(--text-shadow);
 /******************** H E A D E R ************************/
 
 /**************** M E N U  B U R G E R **************/
-nav{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
+.nav-list-mobile {
+	z-index: 998;
+	position: fixed;
+	left: -50vw;
+	top: 50px;
+	width: 25%;
+	height: 60vh;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: var(--clear-background-color);
+	transition: left 0.5s;
 }
 
-nav ul{
-    background-color: var(--dark-background-color);
-    width: calc(100% / 3);
-    border-radius: 16px;
-    position: fixed;
-    left: -100%;
-    top: 6%;
-    width: 300px;
-    height: 300px;
-    transition: 0.25s;
-    margin-left: 20px;
-    z-index: 1;
+.nav-list-mobile a {
+	z-index: 998;
+	color: #f4f4f4;
+	width: 25%;
 }
 
-
-nav li{
-    padding-top: 60px;
-    padding-left:60px;
+.navbar-mobile i {
+	width: 15%;
+	z-index: 999;
+	font-size: 40px;
+	position: fixed;
+	top: 10px;
+	left: 15px;
+	color: rgb(90, 76, 97);
 }
 
-nav ul a{
-    color: var(--font-color-p-first);
-    font-size: larger;
-    font-size: calc(0,5rem + 1,5vw);
-    font-weight: bold;
+.list-visible {
+	left: 0;
+	text-align: center;
+	left: 80px;
+	top: 50px;
+	width: 55vw;
 }
 
-#icons{
-    cursor: pointer;
-    display: block;
-    width: 60px;
-}
-
-#icons:before{
-    content: "\2630";
-    font-size: xx-large;
-    color: var(--h1-font-color);
-}
-
-.active #icons:before{
-    content: "\2715";
-    font-size: xx-large;
-
-}
-
-nav.active ul {
-    left: 0;
+.icon-visible {
+	color: #f4f4f4;
 }
 
 nav h2{
     color: var(--h2-font-color);
     font-family: var(--h2-h3-font);
     text-shadow: 1px 1px 3px rgba(186,154,230,0.16);
+    padding-left: 285px;
+    padding-top: 8px;
 }
 
 /* ******************* M A I N ******************************* */

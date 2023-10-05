@@ -116,6 +116,7 @@ $dataStudents = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best PHP Session Ever</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/9fbc16b7ca.js" crossorigin="anonymous"'></script>
     <link rel="stylesheet" media="screen and (min-width: 420px)" media="screen" href="home_desktop_style.css" type="text/css" />
   </head>
   <body>
@@ -128,21 +129,28 @@ $dataStudents = [
   <a href="#header"><img src="./assets/circle-chevron-down-solid.png" alt="small button invite you to scroll"></a>    
   </div>    
     <header id="header">
-      <nav id="nav" class="active">
-        <ul>
-          <li>
-            <a href="index.html">Accueil</a>
-          </li>
-          <li>
-            <a href="#underNav">Wilders</a>
-          </li>
-          <li>
-            <a href="aboutus.html">A propos</a>
-          </li>
-        </ul>
-        <div id="icons"></div>
+    <nav class="navbar-mobile">
+      <i class="fa-solid fa-bars"></i>
+        <div class="nav-list-mobile">
+           <li> <a href="/index.php">Home</a></li>
+            <li><a href="/indexWilders.php">Wilders</a></li>
+              <ul> 
+                <li> <a href="/wildersAmina.html">Amina</a></li>
+                <li> <a href="/wildersBenjamin.html">Benjamin</a></li>
+                <li> <a href="/wildersVictor.html">Victor</a></li>
+                <li> <a href="/wildersThomas.html">Thomas</a></li>
+                <li> <a href="/wildersPaul.html">Paul</a></li>
+                <li> <a href="/wildersMerwan.html">Merwan</a></li>
+                <li> <a href="/wildersNicky.html">Nicky</a></li>
+                <li> <a href="/wildersPlouis.html">Pierre-Louis</a></li>
+                <li> <a href="/wildersRyad.html">Ryad</a></li>
+                <li> <a href="/wildersAude.html">Aude</a></li>
+                <li> <a href="/wildersRomain.html">Romain</a></li></ul>
+             <li> <a href="/aboutus.html">A propos</a></li>
+        </div>
         <h2>BSPE</h2>
-      </nav>
+    </nav>
+
         <div class="headAboutCard">
           <p>A PROPOS</p>
           <hr>
@@ -212,6 +220,6 @@ $dataStudents = [
      <a href="#header" ><img src="./assets/circle-chevron-up-solid.png" alt="arrowup" class="down"/></a>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
