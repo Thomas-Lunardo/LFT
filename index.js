@@ -1,11 +1,7 @@
-const links = document.querySelectorAll("nav li");
+const icon = document.querySelector(".fa-bars");
+const list = document.querySelector(".nav-list-mobile");
 
-icons.addEventListener("click", () => {
-  nav.classList.toggle("active");
-});
-
-links.forEach((link) => {
-  link.addEventListener("click", () => {
-    nav.classList.remove("active");
-  });
+icon.addEventListener("click", function () {
+	list.classList.toggle("list-visible");
+	list.classList.toggle("icon-visible");
 });
