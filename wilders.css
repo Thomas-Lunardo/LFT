@@ -46,6 +46,7 @@ main {
 	z-index: 998;
 	position: fixed;
 	left: -50vw;
+	top: 50px;
 	width: 25%;
 	height: 60vh;
 	border-radius: 15px;
@@ -75,6 +76,9 @@ main {
 .list-visible {
 	left: 0;
 	text-align: center;
+	left: 80px;
+	top: 50px;
+	width: 55vw;
 }
 
 .icon-visible {
@@ -288,6 +292,14 @@ p.rank {
 		left: 3.5vw;
 		width: auto;
 		height: 100vh;
+	}
+
+	.list-visible {
+		left: 0;
+		text-align: center;
+		left: 80px;
+		top: 50px;
+		width: 15vw;
 	}
 
 	.bottom-info {

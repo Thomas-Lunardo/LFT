@@ -18,22 +18,20 @@ include 'function.php'
     <nav class="navbar-mobile">
    <i class="fa-solid fa-bars"></i>
         <div class="nav-list-mobile">
-            <a href="#">Home</a>
-            <ul>
-                <li><a href="#">Wilders</a></li>
-                <li class="sousMenu"><a href="#">Amina</a></li>
-                <li class="sousMenu"><a href="#">Benjamin</a></li>
-                <li class="sousMenu"><a href="#">Victor</a></li>
-                <li class="sousMenu"><a href="#">Thomas</a></li>
-                <li class="sousMenu"><a href="#">Paul</a></li>
-                <li class="sousMenu"><a href="#">Merwan</a></li>
-                <li class="sousMenu"><a href="#">Nicky</a></li>
-                <li class="sousMenu"><a href="#">Pierre-Louis</a></li>
-                <li class="sousMenu"><a href="#">Ryad</a></li>
-                <li class="sousMenu"><a href="#">Aude</a></li>
-                <li class="sousMenu"><a href="#">Romain</a></li>
-            </ul>
-            <a href="#">A propos</a>
+           <li> <a href="#">Home</a></li>
+              <ul> <a href="#">Wilders</a>
+               <li> <a href="#">Amina</a></li>
+               <li> <a href="#">Benjamin</a></li>
+               <li> <a href="#">Victor</a></li>
+               <li> <a href="#">Thomas</a></li>
+               <li> <a href="#">Paul</a></li>
+               <li> <a href="#">Merwan</a></li>
+               <li> <a href="#">Nicky</a></li>
+               <li> <a href="#">Pierre-Louis</a></li>
+               <li> <a href="#">Ryad</a></li>
+               <li> <a href="#">Aude</a></li>
+               <li> <a href="#">Romain</a></li></ul>
+           <li> <a href="#">A propos</a></li>
         </div>
     </nav>
     <main>
