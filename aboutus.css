@@ -1,19 +1,19 @@
 :root {
-  --h2h3-font: "Source Sans 3", sans-serif;
-  --h2-color: #aca7cb;
-  --h3-color: #ffffff;
-  --paragraph-font: "Nunito Sans", sans-serif;
-  --paragraph-color: black;
-  --clear-background-color: rgba(172, 167, 203, 1);
-  --dark-background-color: rgba(71, 69, 84, 1);
+	--h2h3-font: "Source Sans 3", sans-serif;
+	--h2-color: #aca7cb;
+	--h3-color: #ffffff;
+	--paragraph-font: "Nunito Sans", sans-serif;
+	--paragraph-color: black;
+	--clear-background-color: rgba(172, 167, 203, 1);
+	--dark-background-color: rgba(71, 69, 84, 1);
 }
 
 * {
-  margin: 0;
-  padding: 0%;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style: none;
+	margin: 0;
+	padding: 0%;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
 }
 
 /*********** FONT NUNITO SANS ET SOURCE SANS 3 ******************/
@@ -21,241 +21,245 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap");
 
 /************* MENU ************/
-li, ul{
-    font-family: var(--paragraph-font);
+li,
+ul {
+	font-family: var(--paragraph-font);
 }
 
 .nav-list-mobile {
-  z-index: 998;
-  position: fixed;
-  left: -50vw;
-  top: 50px;
-  width: 25%;
-  height: 60vh;
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  background-color: var(--clear-background-color);
-  transition: left 0.5s;
+	z-index: 998;
+	position: fixed;
+	left: -50vw;
+	top: 50px;
+	width: 25%;
+	height: 60vh;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	background-color: var(--clear-background-color);
+	transition: left 0.5s;
 }
 
 .nav-list-mobile a {
-  z-index: 998;
-  color: #f4f4f4;
-  width: 25%;
+	z-index: 998;
+	color: #f4f4f4;
+	width: 25%;
 }
 
 .navbar-mobile i {
-  width: 15%;
-  z-index: 999;
-  font-size: 40px;
-  position: fixed;
-  top: 10px;
-  left: 15px;
-  color: var(--clear-background-color);
+	width: 15%;
+	z-index: 999;
+	font-size: 40px;
+	position: fixed;
+	top: 10px;
+	left: 15px;
+	color: var(--clear-background-color);
 }
 
 .list-visible {
-  left: 0;
-  text-align: center;
-  left: 80px;
-  top: 50px;
-  width: 55vw;
+	left: 0;
+	text-align: center;
+	left: 80px;
+	top: 50px;
+	width: 55vw;
 }
 
 .icon-visible {
-  color: #f4f4f4;
+	color: #f4f4f4;
 }
 
 /*********** BODY **************/
 body {
-  background-image: url(assets/background_big_white.png);
+	background-image: url(assets/background_big_white.png);
 }
 
 .main-container {
-  display: flex;
-  flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 h2 {
-  color: var(--h2-color);
-  font-family: var(--h2h3-font);
-  text-align: center;
-  letter-spacing: 0.2rem;
+	color: var(--h2-color);
+	font-family: var(--h2h3-font);
+	text-align: center;
+	letter-spacing: 0.2rem;
+	padding-top: 1rem;
+	font-size: large;
 }
 
 .citation {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
-  font-size: 0.9rem;
-  padding-top: 10%;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin: auto;
-  text-align: center;
+	font-family: var(--paragraph-font);
+	color: var(--paragraph-color);
+	font-size: 0.9rem;
+	padding-top: 10%;
+	padding-left: 5%;
+	padding-right: 5%;
+	margin: auto;
+	text-align: center;
 }
 
 #author {
-  font-family: var(--paragraph-font);
-  font-size: 0.9rem;
-  padding-bottom: 10%;
-  padding-top: 3%;
-  width: 33vh;
-  margin: auto;
-  font-style: italic;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	font-family: var(--paragraph-font);
+	font-size: 0.9rem;
+	padding-bottom: 10%;
+	padding-top: 3%;
+	width: 33vh;
+	margin: auto;
+	font-style: italic;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 img {
-  width: 45vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  border-radius: 5%;
+	width: 45vh;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border-radius: 5%;
 }
 
 #map {
-  display: none;
+	display: none;
 }
 
 .adresse {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
-  font-size: 0.9rem;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  display: flex;
-  padding-top: 30px;
+	font-family: var(--paragraph-font);
+	color: var(--paragraph-color);
+	font-size: 0.9rem;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	display: flex;
+	padding-top: 30px;
 }
 
 h3 {
-  font-family: var(--h2h3-font);
-  color: var(--h3-color);
-  width: 30%;
-  margin-left: 35%;
-  margin-right: auto;
-  margin-top: 30px;
-  border: 9px solid #aca7cb;
-  background-color: #aca7cb;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: center;
+	font-family: var(--h2h3-font);
+	color: var(--h3-color);
+	width: 30%;
+	margin-left: 35%;
+	margin-right: auto;
+	margin-top: 30px;
+	border: 9px solid #aca7cb;
+	background-color: #aca7cb;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+	display: flex;
+	justify-content: center;
 }
 
 h3 a:link {
-  color: var(--h3-color);
+	color: var(--h3-color);
 }
 
 h3 a:visited {
-  color: var(--h3-color);
+	color: var(--h3-color);
 }
 
 .slogan {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color);
-  font-size: 0.9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
+	font-family: var(--paragraph-font);
+	color: var(--paragraph-color);
+	font-size: 0.9rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding-top: 10%;
+	padding-bottom: 10%;
 }
 
 /*********************$ MEDIA QUERY DESKTOP *******************/
 @media screen and (min-width: 1000px) {
-  /*********** NAV ***********/
-  .list-visible {
-    left: 0;
-    text-align: center;
-    left: 80px;
-    top: 50px;
-    width: 15vw;
-  }
+	/*********** NAV ***********/
+	.list-visible {
+		left: 0;
+		text-align: center;
+		left: 65px;
+		top: 50px;
+		width: 15vw;
+		height: 40vh;
+	}
 
-  .navbar-mobile i {
-    width: 15%;
-    z-index: 999;
-    font-size: 40px;
-    position: fixed;
-    top: 10px;
-    left: 6px;
-    color: var(--clear-background-color);
-  }
+	.navbar-mobile i {
+		width: 15%;
+		z-index: 999;
+		font-size: 40px;
+		position: fixed;
+		top: 10px;
+		left: 6px;
+		color: var(--clear-background-color);
+	}
 
-  /*********** BODY **********/
+	/*********** BODY **********/
 
-  .main-container {
-    flex-direction: row-reverse;
-  }
+	.main-container {
+		flex-direction: row-reverse;
+	}
 
-  .flexright {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: auto;
-    padding: auto;
-    gap: 1.1em;
-  }
+	.flexright {
+		display: flex;
+		flex-direction: column-reverse;
+		margin: auto;
+		padding: auto;
+		gap: 1.1em;
+	}
 
-  .flexleft {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-    margin: auto;
-    gap: 1.2em;
-  }
+	.flexleft {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-end;
+		margin: auto;
+		gap: 1.2em;
+	}
 
-  #map {
-    display: flex;
-  }
+	#map {
+		display: flex;
+	}
 
-  h2 {
-    font-size: 4rem;
-    text-align: center;
-    padding-bottom: 2em;
-  }
+	h2 {
+		font-size: 4rem;
+		text-align: center;
+		padding-bottom: 2em;
+	}
 
-  .citation {
-    font-size: 1.2rem;
-    padding: 0;
-  }
+	.citation {
+		font-size: 1.2rem;
+		padding: 0;
+	}
 
-  #author {
-    font-size: 1.2rem;
-    padding: 5px;
-  }
+	#author {
+		font-size: 1.2rem;
+		padding: 5px;
+	}
 
-  img {
-    width: 45vw;
-    border-radius: 5%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: right;
-  }
+	img {
+		width: 45vw;
+		border-radius: 5%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: right;
+	}
 
-  .adresse {
-    font-size: 1.2rem;
-    padding: 0;
-  }
+	.adresse {
+		font-size: 1.2rem;
+		padding: 0;
+	}
 
-  h3 {
-    width: 35%;
-    margin-left: auto;
-    font-size: 1.6rem;
-    padding: 0;
-    margin: 0;
-  }
+	h3 {
+		width: 35%;
+		margin-left: auto;
+		font-size: 1.6rem;
+		padding: 0;
+		margin: 0;
+	}
 
-  .slogan {
-    font-size: 1.2rem;
-    padding: 0;
-  }
+	.slogan {
+		font-size: 1.2rem;
+		padding: 0;
+	}
 }
