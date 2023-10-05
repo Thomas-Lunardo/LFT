@@ -297,9 +297,10 @@ p.rank {
 	.list-visible {
 		left: 0;
 		text-align: center;
-		left: 80px;
+		left: 65px;
 		top: 50px;
 		width: 15vw;
+		height: 40vh;
 	}
 
 	.navbar-mobile i {
@@ -311,7 +312,7 @@ p.rank {
 		left: 6px;
 		color: var(--clear-background-color);
 	}
-
+	/*----------------------------------------------- FIN MENU BURGER  */
 	.bottom-info {
 		height: 80vh;
 		width: 30%;
