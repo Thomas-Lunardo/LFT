@@ -221,6 +221,15 @@ main hgroup h2, hr{
     padding: 16px;
 }
 
+.darkClass, .clearClass{
+    border-radius: 24px;
+    padding-top: 16px;
+    padding-left: 16px;
+    font-size: small;
+    box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
+}
+
+
 .masterHomeCard, .studentHomeCard{
     border-radius: 24px;
     padding-top: 16px;
@@ -229,14 +238,38 @@ main hgroup h2, hr{
     box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
 }
 
-/**************** M A S T E R  H O M E  C A R D S  ************/
+/**************** D A R K  H O M E  C A R D S  ************/
+.darkClass{
+    background-color: var(--dark-background-color);
+    color: var(--h2-font-color);
+}
 
-/***** ALL HOME CARDS  *******/
+.darkClass p:nth-child(2){
+    font-weight: bold;
+    color: var(--h2-font-color);
+}
+
+
+.darkClass p:first-of-type, .clearClass p:first-of-type{
+    color: var(--font-color-p-first);
+}
 
 .masterHomeCard p:first-of-type .studentHomeCardClear p:first-of-type, .studentHomeCardDark p:first-of-type{
     color: var(--font-color-p-first);
 
  }
+
+ /**************** C L E A R  H O M E  C A R D S  ************/
+ .clearClass{
+    background-color: var(--clear-background-color);
+    color: var(--h1-font-color);
+}
+
+.clearClass p:nth-child(2){
+    font-weight: bold;
+    color: var(--h1-font-color);
+}
+
 
 a img{
     height: auto;
