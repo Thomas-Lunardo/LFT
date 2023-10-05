@@ -35,6 +35,22 @@ hr{
     display: none;
 }
 
+/**************** M E N U  B U R G E R ************************/
+
+
+.list-visible {
+    left: 0;
+    text-align: center;
+    left: 65px;
+    top: 50px;
+    width: 15vw;
+    height: 40vh;
+}
+
+.navbar-mobile i {
+	color: rgb(90, 76, 97);
+}
+
 /******************** H E A D E R ************************/
 
 /******* NAV BAR *****/
@@ -54,6 +70,7 @@ header h2{
     display: block;
     text-align: center;
     font-family: var(--h1-font);
+    margin-top: 66px;
 }
 
 .headAboutCard div{
