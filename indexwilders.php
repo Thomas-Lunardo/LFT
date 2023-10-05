@@ -1,7 +1,6 @@
 <?php
 
-
-function showwilders()
+function showWilders()
 {
     $images = array(
         './images/wilders/aminav2.png',
@@ -36,7 +35,6 @@ function showwilders()
     );
 
     for ($i = 0; $i < count($images); $i++) {
-
         echo "<a href =  '$links[$i]' ><img src= '$images[$i]'/></a> ";
     };
 };
@@ -56,7 +54,7 @@ function showwilders()
 <body>
     <main>
         <div class='containers'>
-            <?php echo showwilders() ?>
+            <?php echo showWilders() ?>
         </div>
     </main>
 
