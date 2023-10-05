@@ -1,47 +1,6 @@
 <?php
-
-
-function showwilders()
-{
-    $images = array(
-        './images/wilders/aminav2.png',
-        './images/wilders/victorv2.png',
-        './images/wilders/thomasv2.png',
-        './images/wilders/merwanv2.png',
-        './images/wilders/benjaminv2.png',
-        './images/wilders/paulv2.png',
-        './images/wilders/nickyv2.png',
-        './images/wilders/audev2.png',
-        './images/wilders/wilders.png',
-        './images/wilders/ryadv2.png',
-        './images/wilders/pierrelouisv2.png',
-        './images/wilders/romainv2.png',
-
-    );
-
-    $links = array(
-        './wildersamina.html',
-        './wildersvictor.html',
-        './wildersthomas.html',
-        './wildersmerwan.html',
-        './wildersbenjamin.html',
-        './wilderspaul.html',
-        './wildersnicky.html',
-        './wildersaude.html',
-        './aboutus.html',
-        './wildersryad.html',
-        './wildersplouis.html',
-        './wildersromain.html',
-
-    );
-
-    for ($i = 0; $i < count($images); $i++) {
-
-        echo "<a href =  '$links[$i]' ><img src= '$images[$i]'/></a> ";
-    };
-};
+include 'function.php'
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -49,46 +8,41 @@ function showwilders()
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="wilders.css">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/9fbc16b7ca.js" crossorigin="anonymous"'></script>
+    <title>Page des wilders</title>
 </head>
 
 
 <body>
-    <nav>
-        <div class="navbar">
-            <div class="container nav-container">
-                <input class="checkbox" type="checkbox" name="" id="" />
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <div class="menu-items">
-                    <li><a href="#">Home</a></li>
-                    <ul><a href="#">Wilders</a>
-                        <li class="sousmenu"><ahref="#">Amina</a></li>
-                        <li class="sousmenu"><ahref="#">Benjamin</a></li>
-                        <li class="sousmenu"><ahref="#">Victor</a></li>
-                        <li class="sousmenu"><ahref="#">Thomas</a></li>
-                        <li class="sousmenu"><ahref="#">Paul</a></li>
-                        <li class="sousmenu" ><ahref="#">Merwan</a></li>
-                        <li><ahref="#">Nicky</a></li>
-                        <li><ahref="#">Pierre-Louis</a></li>
-                        <li><ahref="#">Aude</a></li>
-                        <li><ahref="#">Ryad</a></li>
-                        <li><ahref="#">Romain</a></li>
-                    </ul>
-                    <li><a href="#">A propos</a></li>
-                </div>
-            </div>
+
+    <nav class="navbar-mobile">
+   <i class="fa-solid fa-bars"></i>
+        <div class="nav-list-mobile">
+            <a href="#">Home</a>
+            <ul>
+                <li><a href="#">Wilders</a></li>
+                <li class="sousMenu"><a href="#">Amina</a></li>
+                <li class="sousMenu"><a href="#">Benjamin</a></li>
+                <li class="sousMenu"><a href="#">Victor</a></li>
+                <li class="sousMenu"><a href="#">Thomas</a></li>
+                <li class="sousMenu"><a href="#">Paul</a></li>
+                <li class="sousMenu"><a href="#">Merwan</a></li>
+                <li class="sousMenu"><a href="#">Nicky</a></li>
+                <li class="sousMenu"><a href="#">Pierre-Louis</a></li>
+                <li class="sousMenu"><a href="#">Ryad</a></li>
+                <li class="sousMenu"><a href="#">Aude</a></li>
+                <li class="sousMenu"><a href="#">Romain</a></li>
+            </ul>
+            <a href="#">A propos</a>
         </div>
     </nav>
     <main>
-        <div class='containers'>
-            <?php echo showwilders() ?>
+        <div class="containers">
+        <?php showWilders() ?> 
         </div>
     </main>
-
-</body>
+             <script src="index.js">
+             </script>
+    </body>
 
 </html>
