@@ -53,7 +53,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
-	background-color: var(--dark-background-color);
+	background-color: var(--clear-background-color);
 	transition: left 0.5s;
 }
 
@@ -300,6 +300,16 @@ p.rank {
 		left: 80px;
 		top: 50px;
 		width: 15vw;
+	}
+
+	.navbar-mobile i {
+		width: 15%;
+		z-index: 999;
+		font-size: 40px;
+		position: fixed;
+		top: 10px;
+		left: 6px;
+		color: var(--clear-background-color);
 	}
 
 	.bottom-info {
