@@ -21,6 +21,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&family=Source+Sans+3:wght@500&display=swap");
 
 /************* MENU ************/
+li, ul{
+    font-family: var(--paragraph-font);
+}
+
 .nav-list-mobile {
   z-index: 998;
   position: fixed;
