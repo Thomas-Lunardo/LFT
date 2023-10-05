@@ -94,8 +94,6 @@ header h2{
     width: 80%;
 }
 
-
-
 .mindCards div p{
     font-size: medium;
     text-align: center;
@@ -136,6 +134,11 @@ main hgroup p{
     margin-bottom: 150px;
 }
 
+.desktopPicture{
+    display: block;
+ }
+
+
 @media screen and (max-width: 750px) {
     .homeGrid{
         grid-template-columns: repeat(2, 221px);
@@ -146,21 +149,23 @@ main hgroup p{
 }
 
 /********* ALL HOME CARDS  *******/
-.masterHomeCard, .studentHomeCardClear, .studentHomeCardDark{
+.darkClass, .clearClass, .studentHomeCardDark{
     border-radius: 2px;
     padding: 0;
     margin: 0;
 }
 
-.masterHomeCard p, .studentHomeCardClear p, .studentHomeCardDark p{
+.darkClass p, .clearClass p, .studentHomeCardDark p{
     display: none;
 }
 
-.homeGrid a img{
-        position: relative;
-        top: 85%;
-        left: 1vw;
-}
+.aboutUs{
+    border-radius: 2px;
+ }
+
+.aboutUs p{
+    display: none;
+ } 
 
 #A_propos a img{
     position: relative;
@@ -168,80 +173,15 @@ main hgroup p{
     left: 2vw;
 }
 
-/**************** M A S T E R  H O M E  C A R D S  ************/
-#ChakirHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/amina_small.png);
-    }
-
-#RichardHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/benjamin_small.png);
-    border-radius: 2px;
-    }
-
-/***** STUDENT HOME CARDS *******/
-
-#AnclinHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/victor_small.png);
-    }
-
-#LunardoHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/thomas_small.png);
-    }
-
-#HernandezHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/paul_small.png);
-    }
-
-#Si_TayebHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/merwan_small.png);
-    }
-
-#RasamoelinaHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/nicky_small.png);
-    }
-
-#BonnierHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/pierrelouis_small.png);
-    }
-
-#MonnetHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/aude_small.png);
-    }
-#ZaatourHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/ryad_small.png);
-    }
-
-#GuiotHome{
-    background-repeat: no-repeat;
-    background-color: transparent;
-    background-image: url(./images/desktop/romain_small.png);
-    }
-
 #A_propos {
     background-repeat: no-repeat;
     background-color: transparent;
     background-image: url(./images/wilders/wilders.png);
 }
+
+/**************** M A S T E R  H O M E  C A R D S  ************/
+
+
 
     /* *********** F O O T E R ***************************************/
 

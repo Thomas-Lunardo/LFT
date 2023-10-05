@@ -11,7 +11,7 @@ $dataTeachers = [
   'title' => 'Maitresse Jedi',
   'link' => 'wildersamina.html',
   'image' => '/images/desktop/amina_small.png',
-  'arrow' => '/assets/images/Arrowright.png',
+  'arrow' => '/assets/Arrowright.png',
 ],
 [
   'class' => 'clearClass',
@@ -20,7 +20,7 @@ $dataTeachers = [
   'title' => 'Chevalier Jedi',
   'link' => 'wildersbenjamin.html',
   'image' => '/images/desktop/benjamin_small.png',
-  'arrow' => '/assets/images/Arrowright.png',
+  'arrow' => '/assets/Arrowright.png',
 ],
 ];
 
@@ -32,7 +32,7 @@ $dataStudents = [
     'title' => 'Padawan',
     'link' => 'wildersvictor.html',
     'image' => '/images/desktop/victor_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 [
     'class' => 'darkClass',
@@ -41,7 +41,7 @@ $dataStudents = [
     'title' => 'Padawan',
     'link' => 'wildersthomas.html',
     'image' => '/images/desktop/thomas_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 [
     'class' => 'darkClass',
@@ -50,7 +50,7 @@ $dataStudents = [
     'title' => 'Padawan',
     'link' => 'wilderspaul.html',
     'image' => '/images/desktop/paul_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 [
     'class' => 'clearClass',
@@ -59,7 +59,7 @@ $dataStudents = [
     'title' => 'Padawan',
     'link' => 'wildersmerwan.html',
     'image' => '/images/desktop/merwan_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 [
     'class' => 'clearClass',
@@ -68,15 +68,16 @@ $dataStudents = [
     'title' => 'Padawan',
     'link' => 'wildersnicky.html',
     'image' => '/images/desktop/nicky_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 [
     'class' => 'darkClass',
     'lastname' => 'Bonnier',
     'firstname' => 'Pierre-Louis',
     'title' => 'Padawan',
-    'link' => 'wildersplouis.htmlclass10pierrelouis_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'link' => 'wildersplouis.html',
+    'image' => '/images/desktop/pierrelouis_small.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 [
     'class' => 'darkClass',
@@ -85,7 +86,7 @@ $dataStudents = [
     'title' => 'Padawan',
     'link' => 'wildersaude.html',
     'image' => '/images/desktop/aude_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 [
     'class' => 'clearClass',
@@ -94,7 +95,7 @@ $dataStudents = [
     'title' => 'padawan',
     'link' => 'wildersryad.html',
     'image' => '/images/desktop/ryad_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 [
     'class' => 'clearClass',
@@ -103,7 +104,7 @@ $dataStudents = [
     'title' => 'Padawan',
     'link' => 'wildersromain.html',
     'image' => '/images/desktop/romain_small.png',
-    'arrow' => '/assets/images/Arrowright.png',
+    'arrow' => '/assets/Arrowright.png',
 ],
 ];
   ?>
@@ -164,7 +165,6 @@ $dataStudents = [
               Toujours en quête de perfectionnement</p>
           </div>
         </div>
-        <p>Decouvrir</p>
       </div>
     </header>
     <main>
@@ -176,22 +176,24 @@ $dataStudents = [
       </hgroup>
       <div class="homeGrid">
       <?php foreach($dataTeachers as $key => $value) {?>
-        <div class="<?php echo $value['class']?>" id="ChakirHome">
+        <div class="<?php echo $value['class']?>">
           <p><?php echo $value['lastname'] ?></p>
           <p><?php echo $value['firstname'] ?></p>
           <p><?php echo $value['title'] ?></p>
-          <a href="wildersamina.html"><img src="./assets/Arrowright.png" class="desktopChevronLink" alt="chevron circle-chevron-right-solid"></a>
+          <img src="<?php echo $value['image'] ?>" class="desktopPicture" alt="profil picture of teacher">
+          <a class="chevronRight" href="<?php echo $value['link'] ?>"><img src="<?php echo $value['arrow'] ?>" alt="chevron circle-chevron-right-solid"></a>
           </div>
           <?php } ?>
         <?php foreach($dataStudents as $key => $value) {?>
-        <div class="<?php echo $value['class']?>" id="LunardoHome">
+        <div class="<?php echo $value['class']?>">
           <p><?php echo $value['lastname'] ?></p>
           <p><?php echo $value['firstname'] ?></p>
           <p><?php echo $value['title'] ?></p>
-          <a href="wildersthomas.html"><img src="./assets/Arrowright.png" alt="chevron circle-chevron-right-solid"></a>
+          <img src="<?php echo $value['image'] ?>" class="desktopPicture" alt="profil picture of student">
+          <a class="chevronRight" href="<?php echo $value['link'] ?>"><img src=".<?php echo $value['arrow'] ?>" alt="chevron circle-chevron-right-solid"></a>
         </div>
         <?php } ?>
-        <div class="studentHomeCardDark" id="A_propos">
+        <div class="aboutUs" id="A_propos">
           <p>A propos</p>
           <a href="aboutus.html"><img src="./assets/Arrowright.png" alt="chevron circle-chevron-right-solid" class="aPropos"></a>
         </div>

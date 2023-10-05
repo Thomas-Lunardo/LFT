@@ -140,42 +140,6 @@ nav.active ul {
     left: 0;
 }
 
-      /******* UNDER NAV ********/
-
-/* div #underNav{
-    background-color: var(--dark-background-color);
-    width: 40%;
-    border-radius: 16px;
-    position: fixed;
-    left: -100%;
-    top: 6%;
-    width: 88%;
-    transition: 0.25s;
-    margin-left: 16px;
-}
-
-div #underNav li{
-    padding-top: 8px;
-    padding-left: 40px;
-}
-
-div #underNav ul a{
-    color: var(--font-color-p-first);
-    font-size: larger;
-    font-size: calc(0,5rem + 1,5vw);
-}
-
-.active2 #icons:before{
-    content: "\2715";
-    font-size: xx-large;
-}
-
-nav.active2 ul {
-    left: 0;
-} */
-
-/**** h2 NAV BARRE ****/
-
 nav h2{
     color: var(--h2-font-color);
     font-family: var(--h2-h3-font);
@@ -221,22 +185,34 @@ main hgroup h2, hr{
     padding: 16px;
 }
 
+/* ********** ALL CARD ************/
+
 .darkClass, .clearClass{
     border-radius: 24px;
     padding-top: 16px;
     padding-left: 16px;
     font-size: small;
     box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
+    position: relative;
 }
 
-
-.masterHomeCard, .studentHomeCard{
-    border-radius: 24px;
-    padding-top: 16px;
-    padding-left: 16px;
-    font-size: small;
-    box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
+.darkClass p:first-of-type, .clearClass p:first-of-type{
+    color: var(--font-color-p-first);
 }
+
+.darkClass p:nth-last-of-type(2), .clearClass p:nth-last-of-type(2){
+    margin-bottom: 3px;
+}
+
+.chevronRight {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+ .desktopPicture{
+    display: none;
+ }
 
 /**************** D A R K  H O M E  C A R D S  ************/
 .darkClass{
@@ -249,15 +225,9 @@ main hgroup h2, hr{
     color: var(--h2-font-color);
 }
 
-
-.darkClass p:first-of-type, .clearClass p:first-of-type{
-    color: var(--font-color-p-first);
+.darkClass p:nth-child(3){
+    color: var(--clear-background-color);
 }
-
-.masterHomeCard p:first-of-type .studentHomeCardClear p:first-of-type, .studentHomeCardDark p:first-of-type{
-    color: var(--font-color-p-first);
-
- }
 
  /**************** C L E A R  H O M E  C A R D S  ************/
  .clearClass{
@@ -267,16 +237,11 @@ main hgroup h2, hr{
 
 .clearClass p:nth-child(2){
     font-weight: bold;
-    color: var(--h1-font-color);
+    color: var(--dark-background-color);
+
 }
 
-
-a img{
-    height: auto;
-    position: relative;
-    top: 2vh;
-    left: 22vw;
- }
+ /**************** A B O U T U S  C A R D ************/
 
  .aPropos{
     height: auto;
@@ -285,58 +250,7 @@ a img{
     left: 22vw;
  }
 
-/**** ALL MASTER HOME CARDS  ****/
-
-.masterHomeCard p:nth-child(2){
-    font-weight: bold;
-    color: var(--h2-font-color);
-}
-
-/**** FIRST MASTER HOME CARD  ****/
-
-.masterHomeCard:first-of-type{
-    background-color: var(--dark-background-color);
-    color: var(--h2-font-color);
-}
-
-/**** SECOND MASTER HOME CARD  ****/
-
-.masterHomeCard:nth-of-type(2){
-    background-color: var(--clear-background-color);
-    color: var(--h1-font-color);
- }
-
- .masterHomeCard:nth-of-type(2) p:nth-of-type(2){
-    background-color: var(--clear-background-color);
-    color: var(--dark-background-color);
- }
-
- /***** STUDENT HOME CARDS *******/
-
- /**** ALL STUDENTS HOME CARDS  ****/
-
-
-
-  /**** CLEAR STUDENTS HOME CARDS  ****/
-
- .studentHomeCardClear{
-    background-color: var(--clear-background-color);
-    border-radius: 24px;
-    padding-top: 16px;
-    padding-left: 16px;
-    font-size: small;
-    box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
- }
-
- .studentHomeCardClear p:nth-child(2){
-    font-weight: bold;
-    margin-bottom: 3px;
-    color: var(--dark-background-color);
- }
-
-   /**** DARK STUDENTS HOME CARDS  ****/
-
- .studentHomeCardDark{
+ .aboutUs{
     background-color: var(--dark-background-color);
     border-radius: 24px;
     padding-top: 16px;
@@ -345,14 +259,9 @@ a img{
     box-shadow: 1px 2px 6px -1px rgba(0,0,0,0.99);
  }
 
- .studentHomeCardDark p:nth-child(2){
+ .aboutUs p{
+    color: var(--font-color-p-first);
     font-weight: bold;
-    margin-bottom: 3px;
-    color: var(--clear-background-color);
- }
-
- .studentHomeCardDark p:nth-child(3){
-    color: var(--clear-background-color);
  } 
 
 /* *********** F O O T E R ***************************************/
