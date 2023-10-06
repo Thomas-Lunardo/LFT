@@ -19,18 +19,18 @@ function showWilders()
     );
 
     $links = array(
-        './wildersamina.html',
-        './wildersvictor.html',
-        './wildersthomas.html',
-        './wildersmerwan.html',
-        './wildersbenjamin.html',
-        './wilderspaul.html',
-        './wildersnicky.html',
-        './wildersaude.html',
+        './wildersAmina.html',
+        './wildersVictor.html',
+        './wildersThomas.html',
+        './wildersMerwan.html',
+        './wildersBenjamin.html',
+        './wildersPaul.html',
+        './wildersNicky.html',
+        './wildersAude.html',
         './aboutus.html',
-        './wildersryad.html',
-        './wildersplouis.html',
-        './wildersromain.html',
+        './wildersRyad.html',
+        './wildersPlouis.html',
+        './wildersRomain.html',
 
     );
 
