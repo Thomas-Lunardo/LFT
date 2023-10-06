@@ -1,8 +1,6 @@
 <a href="./images/desktop/amina_small.png"></a>
 <?php
 
-// http://localhost:8000/index.php
-
 $dataTeachers = [
   [
   'class' => 'darkClass',
@@ -116,8 +114,8 @@ $dataStudents = [
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best PHP Session Ever</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="https://kit.fontawesome.com/9fbc16b7ca.js" crossorigin="anonymous"'></script>
-    <link rel="stylesheet" media="screen and (min-width: 420px)" media="screen" href="home_desktop_style.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/9fbc16b7ca.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" media="screen and (min-width: 420px)" href="home_desktop_style.css" type="text/css" />
   </head>
   <body>
     <div class="homeScroll">
